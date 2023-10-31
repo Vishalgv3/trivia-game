@@ -1831,22 +1831,22 @@ exports.hooks = {
 /******/ 	}();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
+var __nested_webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
 /*!********************************************!*\
   !*** ./client-src/modules/logger/index.js ***!
   \********************************************/
-__nested_webpack_require_23009__.r(__webpack_exports__);
-/* harmony export */ __nested_webpack_require_23009__.d(__webpack_exports__, {
+__nested_webpack_require_23009__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_23009__.d(__nested_webpack_exports__, {
 /* harmony export */   "default": function() { return /* reexport default export from named module */ webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__; }
 /* harmony export */ });
 /* harmony import */ var webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_23009__(/*! webpack/lib/logging/runtime.js */ "./node_modules/webpack/lib/logging/runtime.js");
 
 }();
 var __webpack_export_target__ = exports;
-for(var i in __webpack_exports__) __webpack_export_target__[i] = __webpack_exports__[i];
-if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
+for(var i in __nested_webpack_exports__) __webpack_export_target__[i] = __nested_webpack_exports__[i];
+if(__nested_webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
 /******/ })()
 ;
 
@@ -1861,9 +1861,9 @@ if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "formatProblem": () => (/* binding */ formatProblem),
-/* harmony export */   "hide": () => (/* binding */ hide),
-/* harmony export */   "show": () => (/* binding */ show)
+/* harmony export */   formatProblem: () => (/* binding */ formatProblem),
+/* harmony export */   hide: () => (/* binding */ hide),
+/* harmony export */   show: () => (/* binding */ show)
 /* harmony export */ });
 /* harmony import */ var ansi_html_community__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ansi-html-community */ "./node_modules/ansi-html-community/index.js");
 /* harmony import */ var ansi_html_community__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ansi_html_community__WEBPACK_IMPORTED_MODULE_0__);
@@ -2095,7 +2095,7 @@ function show(type, messages, trustedTypesPolicyName) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "client": () => (/* binding */ client),
+/* harmony export */   client: () => (/* binding */ client),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _clients_WebSocketClient_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clients/WebSocketClient.js */ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js");
@@ -2369,9 +2369,9 @@ function getCurrentScriptSource() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "log": () => (/* binding */ log),
-/* harmony export */   "logEnabledFeatures": () => (/* binding */ logEnabledFeatures),
-/* harmony export */   "setLogLevel": () => (/* binding */ setLogLevel)
+/* harmony export */   log: () => (/* binding */ log),
+/* harmony export */   logEnabledFeatures: () => (/* binding */ logEnabledFeatures),
+/* harmony export */   setLogLevel: () => (/* binding */ setLogLevel)
 /* harmony export */ });
 /* harmony import */ var _modules_logger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/logger/index.js */ "./node_modules/webpack-dev-server/client/modules/logger/index.js");
 /* harmony import */ var _modules_logger_index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_logger_index_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -2646,10 +2646,17 @@ module.exports = new EventEmitter();
   \*****************************************/
 /***/ ((module) => {
 
+/** @typedef {"info" | "warning" | "error"} LogLevel */
+
+/** @type {LogLevel} */
 var logLevel = "info";
 
 function dummy() {}
 
+/**
+ * @param {LogLevel} level log level
+ * @returns {boolean} true, if should log
+ */
 function shouldLog(level) {
 	var shouldLog =
 		(logLevel === "info" && level === "info") ||
@@ -2658,6 +2665,10 @@ function shouldLog(level) {
 	return shouldLog;
 }
 
+/**
+ * @param {(msg?: string) => void} logFn log function
+ * @returns {(level: LogLevel, msg?: string) => void} function that logs when log level is sufficient
+ */
 function logGroup(logFn) {
 	return function (level, msg) {
 		if (shouldLog(level)) {
@@ -2666,6 +2677,10 @@ function logGroup(logFn) {
 	};
 }
 
+/**
+ * @param {LogLevel} level log level
+ * @param {string|Error} msg message
+ */
 module.exports = function (level, msg) {
 	if (shouldLog(level)) {
 		if (level === "info") {
@@ -2690,10 +2705,17 @@ module.exports.groupCollapsed = logGroup(groupCollapsed);
 
 module.exports.groupEnd = logGroup(groupEnd);
 
+/**
+ * @param {LogLevel} level log level
+ */
 module.exports.setLogLevel = function (level) {
 	logLevel = level;
 };
 
+/**
+ * @param {Error} err error
+ * @returns {string} formatted error
+ */
 module.exports.formatError = function (err) {
 	var message = err.message;
 	var stack = err.stack;
@@ -2762,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("a71befa7409761bd97c1")
+/******/ 		__webpack_require__.h = () => ("dc7092e0d4a5541f6ab5")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3127,13 +3149,7 @@ __webpack_require__.r(__webpack_exports__);
 // JS content goes here
 // ...
 
-function main() {
-  let message = "Hello world!";
-  document.getElementById("message2").innerHTML = message;
-  document.getElementById("message1").innerHTML = "My first JS program...";
-  document.getElementById("message3").innerHTML = "HEHEHEHEHEHEHEH.....";
-  console.log("main function did this");
-}
+function main() {}
 main();
 })();
 
