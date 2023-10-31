@@ -97,7 +97,7 @@ module.exports = {
                 { from: 'lib/', to: '', noErrorOnMissing: true },
                 // copies HTML file to /build
                 { from: 'html/index.html', to: 'index.html' },
-                { from: 'html/pages/faceOff.html', to: 'faceOff.html' },
+                { from: 'html/pages', to: 'pages' },
             ]
         })
     ]
