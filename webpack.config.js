@@ -38,19 +38,19 @@ module.exports = {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {
-                  loader: 'babel-loader',
-                  options: {
-                    presets: [
-                      ['@babel/preset-env', { targets: "defaults" }]
-                    ]
-                  }
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['@babel/preset-env', { targets: "defaults" }]
+                        ]
+                    }
                 }
             },
             {
                 // will bundle all CSS files that are imported via JS into single bundle.css
                 test: /\.css$/i,
                 use: [
-                    MiniCssExtractPlugin.loader, 
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: "css-loader",
                         options: {
@@ -94,9 +94,10 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 // copies all assets in the lib/ folder (images, etc) to /build (in case not imported manually via SCSS or CSS or JS). Any images referenced in SASS or CSS via url() or imported directly with js will already be copied over automatically to /build root and given distinct filename - a little redundant :(
-                {from:'lib/', to:'', noErrorOnMissing: true},
+                { from: 'lib/', to: '', noErrorOnMissing: true },
                 // copies HTML file to /build
-                {from:'html/index.html', to:'index.html'},
+                { from: 'html/index.html', to: 'index.html' },
+                { from: 'html/pages/faceOff.html', to: 'faceOff.html' },
             ]
         })
     ]
