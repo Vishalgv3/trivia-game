@@ -1,0 +1,266 @@
+{
+    "categories": [
+      {
+        "category": "Science",
+        "difficulties": {
+          "easy": [
+            {
+              "question": "What is the chemical symbol for water?",
+              "answers": [
+                "H2O",
+                "CO2",
+                "O2",
+                "N2"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "Which planet is known as the Red Planet?",
+              "answers": [
+                "Mars",
+                "Venus",
+                "Jupiter",
+                "Saturn"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the smallest prime number?",
+              "answers": [
+                "2",
+                "1",
+                "3",
+                "0"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What gas do plants absorb from the atmosphere?",
+              "answers": [
+                "Carbon dioxide",
+                "Oxygen",
+                "Nitrogen",
+                "Hydrogen"
+              ],
+              "correct_answer": 0
+            }
+          ],
+          "medium": [
+            {
+              "question": "What is the powerhouse of the cell?",
+              "answers": [
+                "Mitochondria",
+                "Nucleus",
+                "Ribosome",
+                "Endoplasmic reticulum"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "Which gas is responsible for the Earth's ozone layer?",
+              "answers": [
+                "Ozone",
+                "Oxygen",
+                "Carbon dioxide",
+                "Methane"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the chemical symbol for gold?",
+              "answers": [
+                "Au",
+                "Ag",
+                "Hg",
+                "Pb"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the largest mammal on Earth?",
+              "answers": [
+                "Blue whale",
+                "Elephant",
+                "Giraffe",
+                "Lion"
+              ],
+              "correct_answer": 0
+            }
+          ],
+          "hard": [
+            {
+              "question": "What is the speed of light in a vacuum?",
+              "answers": [
+                "299,792,458 meters per second",
+                "100,000 meters per second",
+                "1,000,000 meters per second",
+                "3,000,000 meters per second"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "Who is the father of modern physics?",
+              "answers": [
+                "Albert Einstein",
+                "Isaac Newton",
+                "Galileo Galilei",
+                "Nikola Tesla"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the chemical formula for sulfuric acid?",
+              "answers": [
+                "H2SO4",
+                "HCl",
+                "HNO3",
+                "CH4"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the largest planet in our solar system?",
+              "answers": [
+                "Jupiter",
+                "Saturn",
+                "Neptune",
+                "Earth"
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      },
+      {
+        "category": "Ancient Rome",
+        "difficulties": {
+          "easy": [
+            {
+              "question": "Who was the first Roman Emperor?",
+              "answers": [
+                "Augustus",
+                "Julius Caesar",
+                "Nero",
+                "Caligula"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What famous structure was built in Rome to host gladiator contests and other public spectacles?",
+              "answers": [
+                "Colosseum",
+                "Pantheon",
+                "Roman Forum",
+                "Circus Maximus"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What was the language of the Romans?",
+              "answers": [
+                "Latin",
+                "Greek",
+                "Italian",
+                "Spanish"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the name of the Roman legislative assembly?",
+              "answers": [
+                "Senate",
+                "Council of Plebs",
+                "Consuls",
+                "Tribunes"
+              ],
+              "correct_answer": 0
+            }
+          ],
+          "medium": [
+            {
+              "question": "In which year was Julius Caesar assassinated in Rome?",
+              "answers": [
+                "44 BC",
+                "27 BC",
+                "12 AD",
+                "58 AD"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the term for the Roman peace and stability that lasted for centuries?",
+              "answers": [
+                "Pax Romana",
+                "Roman Reformation",
+                "Caesar's Rule",
+                "Imperial Era"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "Who was the famous Carthaginian general who fought the Romans in the Punic Wars?",
+              "answers": [
+                "Hannibal",
+                "Scipio Africanus",
+                "Julius Caesar",
+                "Nero"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What is the name of the Roman military formation in which soldiers formed a rectangle with shields for protection?",
+              "answers": [
+                "Testudo",
+                "Phalanx",
+                "Tortoise",
+                "Vexillum"
+              ],
+              "correct_answer": 0
+            }
+          ],
+          "hard": [
+            {
+              "question": "Who was the last Roman emperor of the Western Roman Empire?",
+              "answers": [
+                "Romulus Augustulus",
+                "Constantine the Great",
+                "Julius Caesar",
+                "Augustus"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What was the title of the head priest of the Roman state religion?",
+              "answers": [
+                "Pontifex Maximus",
+                "Rex Sacrorum",
+                "Augur",
+                "Flamen Dialis"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What event marked the traditional date for the founding of Rome?",
+              "answers": [
+                "The founding of Rome",
+                "The Rape of the Sabine Women",
+                "The Battle of Actium",
+                "The Ides of March"
+              ],
+              "correct_answer": 0
+            },
+            {
+              "question": "What was the name of the Roman general who crossed the Rubicon River, leading to civil war and his eventual dictatorship?",
+              "answers": [
+                "Julius Caesar",
+                "Mark Antony",
+                "Pompey",
+                "Cicero"
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
