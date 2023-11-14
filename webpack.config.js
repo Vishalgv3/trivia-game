@@ -98,6 +98,7 @@ module.exports = {
                 // copies HTML file to /build
                 { from: 'html/index.html', to: 'index.html' },
                 { from: 'html/pages', to: 'pages' },
+                { from: 'data/questions.json', to: 'bundle.json' },
             ]
         })
     ]
