@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("0492a1c3e1a9e5d00da6")
+/******/ 		__webpack_require__.h = () => ("5404efccb06754bf1f90")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -2810,9 +2810,9 @@ var __webpack_exports__ = {};
 "use strict";
 var __webpack_exports__ = {};
 /*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=false&live-reload=true ***!
+  !*** ./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=false&live-reload=true ***!
   \************************************************************************************************************************************************************************************/
-var __resourceQuery = "?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=false&live-reload=true";
+var __resourceQuery = "?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=false&live-reload=true";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack/hot/log.js */ "./node_modules/webpack/hot/log.js");
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3145,11 +3145,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../sass/styles.scss */ "./sass/styles.scss");
 // importing the sass stylesheet for bundling
 
+const SOURCE = "http://localhost:3000/bundle.json";
+let jsonData;
+let qCategories;
 
-// JS content goes here
-// ...
+// -------------------- public methods
+function populateCategories(data) {
+  let categories = data.categories;
 
-function main() {}
+  // create the category elements
+  categories.forEach((category, i) => {
+    let div = document.createElement("div");
+    div.classList.add("category" + i);
+    div.innerHTML = category.category;
+    qCategories.appendChild(div);
+  });
+}
+
+// -------------------- event handlers
+function onResponse(data) {
+  console.log(data);
+  jsonData = data;
+  populateCategories(jsonData);
+}
+function onError(e) {
+  console.log(e.message);
+}
+
+// -------------------- main method
+function main() {
+  // initialization
+  qCategories = document.querySelector("#qCategories");
+
+  // -------------------- fetch data
+  fetch(SOURCE).then(response => response.json()).then(data => onResponse(data)).catch(error => {
+    onError(error);
+    if (debug) throw error;
+  });
+}
 main();
 })();
 
