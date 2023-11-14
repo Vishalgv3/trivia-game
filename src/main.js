@@ -7,13 +7,16 @@ let jsonData;
 let qCategories;
 
 // -------------------- public methods
-function populateCategories() {
+function populateCategories(data) {
 
 }
 
 // -------------------- event handlers
 function onResponse(data) {
     console.log(data);
+    
+    jsonData = data;
+    populateCategories(jsonData);
 }
 
 function onError(e) {

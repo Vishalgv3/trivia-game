@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("e4e203b1d100584458a7")
+/******/ 		__webpack_require__.h = () => ("042ebd1455f39420b02b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3150,11 +3150,13 @@ let jsonData;
 let qCategories;
 
 // -------------------- public methods
-function populateCategories() {}
+function populateCategories(data) {}
 
 // -------------------- event handlers
 function onResponse(data) {
   console.log(data);
+  jsonData = data;
+  populateCategories(jsonData);
 }
 function onError(e) {
   console.log(e.message);
