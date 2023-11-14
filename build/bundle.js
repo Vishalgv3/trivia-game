@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("dc7092e0d4a5541f6ab5")
+/******/ 		__webpack_require__.h = () => ("ba71036537451589dc03")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3145,11 +3145,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../sass/styles.scss */ "./sass/styles.scss");
 // importing the sass stylesheet for bundling
 
+const SOURCE = "http://localhost:3000/bundle.json";
 
-// JS content goes here
-// ...
-
-function main() {}
+// -------------------- event handlers
+function onResponse(e) {
+  console.log(e);
+}
+function onError(e) {
+  console.log(e.message);
+}
+function main() {
+  fetch(SOURCE).then(response => response.json()).then(data => onResponse(data)).catch(error => {
+    onError(error);
+    if (debug) throw error;
+  });
+}
 main();
 })();
 
