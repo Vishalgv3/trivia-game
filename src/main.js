@@ -8,7 +8,16 @@ let qCategories;
 
 // -------------------- public methods
 function populateCategories(data) {
+    let categories = data.categories;
 
+    // create the category elements
+    categories.forEach((category, i) => {
+        let div = document.createElement("div");
+        div.classList.add("category" + i);
+        div.innerHTML = category.category;
+
+        qCategories.appendChild(div);
+    });
 }
 
 // -------------------- event handlers

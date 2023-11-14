@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("042ebd1455f39420b02b")
+/******/ 		__webpack_require__.h = () => ("5404efccb06754bf1f90")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3150,7 +3150,17 @@ let jsonData;
 let qCategories;
 
 // -------------------- public methods
-function populateCategories(data) {}
+function populateCategories(data) {
+  let categories = data.categories;
+
+  // create the category elements
+  categories.forEach((category, i) => {
+    let div = document.createElement("div");
+    div.classList.add("category" + i);
+    div.innerHTML = category.category;
+    qCategories.appendChild(div);
+  });
+}
 
 // -------------------- event handlers
 function onResponse(data) {
