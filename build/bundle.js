@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("481e2505b1a2a4227f85")
+/******/ 		__webpack_require__.h = () => ("e4e203b1d100584458a7")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3146,14 +3146,15 @@ __webpack_require__.r(__webpack_exports__);
 // importing the sass stylesheet for bundling
 
 const SOURCE = "http://localhost:3000/bundle.json";
+let jsonData;
 let qCategories;
 
 // -------------------- public methods
 function populateCategories() {}
 
 // -------------------- event handlers
-function onResponse(jsonData) {
-  console.log(jsonData);
+function onResponse(data) {
+  console.log(data);
 }
 function onError(e) {
   console.log(e.message);

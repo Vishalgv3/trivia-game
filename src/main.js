@@ -3,6 +3,7 @@ import "./../sass/styles.scss";
 
 const SOURCE = "http://localhost:3000/bundle.json";
 
+let jsonData;
 let qCategories;
 
 // -------------------- public methods
@@ -11,8 +12,8 @@ function populateCategories() {
 }
 
 // -------------------- event handlers
-function onResponse(jsonData) {
-    console.log(jsonData);
+function onResponse(data) {
+    console.log(data);
 }
 
 function onError(e) {
