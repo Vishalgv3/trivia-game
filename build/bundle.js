@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("ba71036537451589dc03")
+/******/ 		__webpack_require__.h = () => ("680969190af14fa5d0f5")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3146,6 +3146,7 @@ __webpack_require__.r(__webpack_exports__);
 // importing the sass stylesheet for bundling
 
 const SOURCE = "http://localhost:3000/bundle.json";
+let qCategories;
 
 // -------------------- event handlers
 function onResponse(e) {
@@ -3154,7 +3155,13 @@ function onResponse(e) {
 function onError(e) {
   console.log(e.message);
 }
+
+// -------------------- main method
 function main() {
+  // initialization
+  qCategories = document.querySelector("#qCategories");
+
+  // -------------------- fetch data
   fetch(SOURCE).then(response => response.json()).then(data => onResponse(data)).catch(error => {
     onError(error);
     if (debug) throw error;
