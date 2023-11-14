@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("680969190af14fa5d0f5")
+/******/ 		__webpack_require__.h = () => ("481e2505b1a2a4227f85")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3148,9 +3148,12 @@ __webpack_require__.r(__webpack_exports__);
 const SOURCE = "http://localhost:3000/bundle.json";
 let qCategories;
 
+// -------------------- public methods
+function populateCategories() {}
+
 // -------------------- event handlers
-function onResponse(e) {
-  console.log(e);
+function onResponse(jsonData) {
+  console.log(jsonData);
 }
 function onError(e) {
   console.log(e.message);

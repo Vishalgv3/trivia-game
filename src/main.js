@@ -5,9 +5,14 @@ const SOURCE = "http://localhost:3000/bundle.json";
 
 let qCategories;
 
+// -------------------- public methods
+function populateCategories() {
+
+}
+
 // -------------------- event handlers
-function onResponse(e) {
-    console.log(e);
+function onResponse(jsonData) {
+    console.log(jsonData);
 }
 
 function onError(e) {
