@@ -41,7 +41,24 @@
       "sourceType": "module"
     },
     "rules": {
-      "indent": ["warn", 4],
+      "indent-2": {
+        "indent": [
+          "warn",
+          2
+        ]
+      },
+      "indent-4": {
+        "indent": [
+          "warn",
+          4
+        ]
+      },
+      "indent-6": {
+        "indent": [
+          "warn",
+          6
+        ]
+      },
       "quotes": ["warn", "double"],
       "semi": ["error", "always"]
     }

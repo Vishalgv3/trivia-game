@@ -2784,7 +2784,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("dc7092e0d4a5541f6ab5")
+/******/ 		__webpack_require__.h = () => ("5404efccb06754bf1f90")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3145,11 +3145,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../sass/styles.scss */ "./sass/styles.scss");
 // importing the sass stylesheet for bundling
 
+const SOURCE = "http://localhost:3000/bundle.json";
+let jsonData;
+let qCategories;
 
-// JS content goes here
-// ...
+// -------------------- public methods
+function populateCategories(data) {
+  let categories = data.categories;
 
-function main() {}
+  // create the category elements
+  categories.forEach((category, i) => {
+    let div = document.createElement("div");
+    div.classList.add("category" + i);
+    div.innerHTML = category.category;
+    qCategories.appendChild(div);
+  });
+}
+
+// -------------------- event handlers
+function onResponse(data) {
+  console.log(data);
+  jsonData = data;
+  populateCategories(jsonData);
+}
+function onError(e) {
+  console.log(e.message);
+}
+
+// -------------------- main method
+function main() {
+  // initialization
+  qCategories = document.querySelector("#qCategories");
+
+  // -------------------- fetch data
+  fetch(SOURCE).then(response => response.json()).then(data => onResponse(data)).catch(error => {
+    onError(error);
+    if (debug) throw error;
+  });
+}
 main();
 })();
 
