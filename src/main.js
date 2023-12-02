@@ -9,8 +9,17 @@ let selectedCategory;
 let pageCategories;
 let btnDown;
 let btnUp;
+let btnSelect;
+let questionElement;
+let answersElement;
+let jsonAnswers;
+let pageAnswers;
 
 // -------------------- public methods
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function populateCategories(data) {
     let jsonCategories = data.categories;
 
@@ -21,16 +30,48 @@ function populateCategories(data) {
         div.classList.add("category");
         div.innerHTML = category.category;
 
-        qCategories.appendChild(div);
+        if (qCategories) qCategories.appendChild(div);
     });
 
     // select the first category
     selectedCategory = document.querySelector(".category0");
-    selectedCategory.classList.add("selected-category");
+    if (selectedCategory) selectedCategory.classList.add("selected-category");
 
     // populate the page categories array
     pageCategories = document.querySelectorAll(".category");
     console.log(pageCategories);
+}
+
+function populateQuestions(jsonData) {
+    let category = localStorage.getItem("selectedCategory");
+    console.log(category);
+
+    // find the selected category in the json data
+    let selectedCategory = jsonData.categories.find(c => c.category == category);
+    console.log(selectedCategory);
+
+    // get a random question from the selected category
+    let randomEasyIndex = getRandomNumber(0, selectedCategory.difficulties.easy.length - 1);
+    let selectedEasyQuestion = selectedCategory.difficulties.easy[randomEasyIndex];
+
+    // populate the question element
+    if (questionElement) questionElement.innerHTML = selectedEasyQuestion.question;
+
+    // populate the answers
+    jsonAnswers = selectedCategory.difficulties.easy[randomEasyIndex].answers;
+    jsonAnswers.forEach((answer, i) => {
+        let div = document.createElement("div");
+        div.classList.add("answer" + i);
+        div.classList.add("answer");
+        div.innerHTML = answer;
+        if (answersElement) answersElement.appendChild(div);
+    })
+
+    // populate the page answers array
+    pageAnswers = document.querySelectorAll(".answer");
+
+    console.log("jsonAnswers>>>> ", jsonAnswers);
+    console.log("answer elements >>>> ", pageAnswers);
 }
 
 // -------------------- event handlers
@@ -70,11 +111,21 @@ function onUpClicked(e) {
     }
 }
 
+function onSelectClicked(e) {
+    // store the selected category in local storage
+    localStorage.setItem("selectedCategory", selectedCategory.innerHTML);
+}
+
 function onResponse(data) {
     console.log(data);
     
     jsonData = data;
+
+    // on categories page
     populateCategories(jsonData);
+
+    // on questions page
+    populateQuestions(jsonData);
 }
 
 function onError(e) {
@@ -88,10 +139,17 @@ function main() {
     qCategories = document.querySelector("#qCategories");
     btnDown = document.querySelector(".btnDown");
     btnUp = document.querySelector(".btnUp");
+    btnSelect = document.querySelector(".btnSelect");
+
+    questionElement = document.querySelector(".question");
+    answersElement = document.querySelector(".answers");
 
     // wire up the event handlers to the buttons
-    btnDown.addEventListener("click", onDownClicked);
-    btnUp.addEventListener("click", onUpClicked);
+    if (btnDown != null || btnUp != null || btnSelect != null) {
+        btnDown.addEventListener("click", onDownClicked);
+        btnUp.addEventListener("click", onUpClicked);
+        btnSelect.addEventListener("click", onSelectClicked);
+    }
 
     // -------------------- fetch data
     fetch(SOURCE)
@@ -99,7 +157,7 @@ function main() {
         .then(data => onResponse(data))
         .catch(error => {
             onError(error);
-            if (debug) throw error;
+            throw error;
         });
 }
 
