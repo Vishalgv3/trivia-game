@@ -47,22 +47,22 @@
           {
             "question": "What is the capital of Australia?",
             "answers": [
+              "Canberra",
               "Sydney",
               "Melbourne",
-              "Canberra",
               "Perth"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "How many continents are there on Earth?",
             "answers": [
-              "5",
               "6",
+              "5",
               "7",
               "8"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           },
           {
             "question": "What is the chemical symbol for iron?",
@@ -77,22 +77,22 @@
           {
             "question": "Which gas is responsible for the greenhouse effect?",
             "answers": [
-              "Oxygen",
               "Carbon dioxide",
+              "Oxygen",
               "Methane",
               "Nitrogen"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           },
           {
             "question": "What is the largest ocean on Earth?",
             "answers": [
+              "Pacific",
               "Atlantic",
               "Indian",
-              "Arctic",
-              "Pacific"
+              "Arctic"
             ],
-            "correct_answer": 3
+            "correct_answer": 0
           },
           {
             "question": "In what year did the first moon landing occur?",
@@ -107,12 +107,12 @@
           {
             "question": "Who developed the theory of relativity?",
             "answers": [
+              "Albert Einstein",
               "Isaac Newton",
               "Galileo Galilei",
-              "Albert Einstein",
               "Nikola Tesla"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "What is the chemical formula for methane?",
@@ -127,12 +127,12 @@
           {
             "question": "Which element has the symbol 'Na'?",
             "answers": [
+              "Sodium",
               "Nitrogen",
               "Neon",
-              "Sodium",
               "Nickel"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "What is the powerhouse of the cell?",
@@ -319,12 +319,12 @@
           {
             "question": "Which gas is responsible for the color of the Earth's atmosphere?",
             "answers": [
+              "Ozone",
               "Oxygen",
               "Nitrogen",
-              "Carbon dioxide",
-              "Ozone"
+              "Carbon dioxide"
             ],
-            "correct_answer": 3
+            "correct_answer": 0
           },
           {
             "question": "What is the chemical symbol for sodium chloride?",
@@ -359,12 +359,12 @@
           {
             "question": "Which vitamin is known as the 'sunshine vitamin'?",
             "answers": [
+              "Vitamin D",
               "Vitamin A",
               "Vitamin C",
-              "Vitamin D",
               "Vitamin E"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "What is the chemical formula for carbon monoxide?",
@@ -389,12 +389,12 @@
           {
             "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
             "answers": [
-              "Mars",
               "Venus",
+              "Mars",
               "Jupiter",
               "Mercury"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           }
         ],
         "hard": [
@@ -531,12 +531,12 @@
           {
             "question": "What is the chemical formula for acetylsalicylic acid?",
             "answers": [
+              "C9H8O4",
               "C6H12O6",
               "C7H8O",
-              "C9H8O4",
               "C10H16N2O3S"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "Who was the first scientist to isolate radium?",
@@ -571,12 +571,12 @@
           {
             "question": "Who formulated the laws of thermodynamics?",
             "answers": [
+              "Ludwig Boltzmann",
               "Sadi Carnot",
               "James Clerk Maxwell",
-              "Ludwig Boltzmann",
               "Lord Kelvin"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "What is the density of water in grams per cubic centimeter?",
@@ -900,12 +900,12 @@
           {
             "question": "Who was the first Roman Emperor to adopt Christianity?",
             "answers": [
-              "Nero",
               "Constantine the Great",
+              "Nero",
               "Augustus",
               "Julius Caesar"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           },
           {
             "question": "What is the name of the Roman goddess of love and beauty?",
@@ -940,52 +940,52 @@
           {
             "question": "What was the purpose of the Roman aqueducts?",
             "answers": [
-              "Transporting goods",
               "Supplying water",
+              "Transporting goods",
               "Defending cities",
               "Providing shelter"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           },
           {
             "question": "Which emperor built the famous wall in northern Britain known as Hadrian's Wall?",
             "answers": [
+              "Hadrian",
               "Augustus",
               "Nero",
-              "Hadrian",
               "Trajan"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "What is the name of the Roman festival dedicated to the god Saturn, celebrated in December?",
             "answers": [
-              "Lupercalia",
               "Saturnalia",
+              "Lupercalia",
               "Ides of March",
               "Vinalia"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           },
           {
             "question": "Who was the Roman general who defeated Mark Antony and Cleopatra at the Battle of Actium?",
             "answers": [
-              "Julius Caesar",
               "Octavian",
+              "Julius Caesar",
               "Brutus",
               "Pompey"
             ],
-            "correct_answer": 1
+            "correct_answer": 0
           },
           {
             "question": "Who was the Roman historian known for his work 'The Histories'?",
             "answers": [
+              "Livy",
               "Sallust",
               "Tacitus",
-              "Livy",
               "Herodotus"
             ],
-            "correct_answer": 2
+            "correct_answer": 0
           }
         ],
         "hard": [
@@ -1060,16 +1060,6 @@
             "correct_answer": 0
           },
           {
-            "question": "Who was the first Roman Emperor to adopt Christianity?",
-            "answers": [
-              "Nero",
-              "Constantine the Great",
-              "Augustus",
-              "Julius Caesar"
-            ],
-            "correct_answer": 1
-          },
-          {
             "question": "What is the name of the Roman goddess of love and beauty?",
             "answers": [
               "Venus",
@@ -1102,28 +1092,18 @@
           {
             "question": "What was the purpose of the Roman aqueducts?",
             "answers": [
-              "Transporting goods",
               "Supplying water",
+              "Transporting goods",
               "Defending cities",
               "Providing shelter"
             ],
-            "correct_answer": 1
-          },
-          {
-            "question": "Which emperor built the famous wall in northern Britain known as Hadrian's Wall?",
-            "answers": [
-              "Augustus",
-              "Nero",
-              "Hadrian",
-              "Trajan"
-            ],
-            "correct_answer": 2
+            "correct_answer": 0
           },
           {
             "question": "What is the name of the Roman festival dedicated to the god Saturn, celebrated in December?",
             "answers": [
-              "Lupercalia",
               "Saturnalia",
+              "Lupercalia",
               "Ides of March",
               "Vinalia"
             ],
@@ -1209,10 +1189,10 @@
           {
             "question": "Which tag is used to create a hyperlink in HTML?",
             "answers": [
-              "<a>",
-              "<h>",
-              "<p>",
-              "<b>"
+              "&lt;a&gt;",
+              "&lt;h&gt;",
+              "&lt;p&gt;",
+              "&lt;b&gt;"
             ],
             "correct_answer": 0
           },
@@ -1269,10 +1249,10 @@
           {
             "question": "Which HTML tag is used for creating an unordered list?",
             "answers": [
-              "<ul>",
-              "<ol>",
-              "<li>",
-              "<dl>"
+              "&lt;ul&gt;",
+              "&lt;ol&gt;",
+              "&lt;li&gt;",
+              "&lt;dl&gt;"
             ],
             "correct_answer": 0
           },
@@ -1329,10 +1309,10 @@
           {
             "question": "Which of the following is a semantic HTML5 element?",
             "answers": [
-              "<header>",
-              "<div>",
-              "<span>",
-              "<table>"
+              "&lt;header&gt;",
+              "&lt;div&gt;",
+              "&lt;span&gt;",
+              "&lt;table&gt;"
             ],
             "correct_answer": 0
           },
@@ -1351,7 +1331,7 @@
             "answers": [
               "/* */",
               "//",
-              "<!-- -->",
+              "&lt;!-- --&gt;",
               "''' '''"
             ],
             "correct_answer": 0
@@ -1359,10 +1339,10 @@
           {
             "question": "Which HTML tag is used for creating a hyperlink to another webpage?",
             "answers": [
-              "<a>",
-              "<link>",
-              "<h>",
-              "<p>"
+              "&lt;a&gt;",
+              "&lt;link&gt;",
+              "&lt;h&gt;",
+              "&lt;p&gt;"
             ],
             "correct_answer": 0
           },
@@ -1471,10 +1451,10 @@
           {
             "question": "Which HTML tag is used for creating an ordered list?",
             "answers": [
-              "<ol>",
-              "<ul>",
-              "<li>",
-              "<dl>"
+              "&lt;ol&gt;",
+              "&lt;ul&gt;",
+              "&lt;li&gt;",
+              "&lt;dl&gt;"
             ],
             "correct_answer": 0
           },
@@ -1541,10 +1521,10 @@
           {
             "question": "Which HTML tag is used to embed an external JavaScript file?",
             "answers": [
-              "<script>",
-              "<style>",
-              "<link>",
-              "<meta>"
+              "&lt;script&gt;",
+              "&lt;style&gt;",
+              "&lt;link&gt;",
+              "&lt;meta&gt;"
             ],
             "correct_answer": 0
           },
@@ -1623,10 +1603,10 @@
           {
             "question": "Which HTML tag is used for defining navigation links?",
             "answers": [
-              "<nav>",
-              "<link>",
-              "<a>",
-              "<ul>"
+              "&lt;nav&gt;",
+              "&lt;link&gt;",
+              "&lt;a&gt;",
+              "&lt;ul&gt;"
             ],
             "correct_answer": 0
           },
@@ -1753,10 +1733,10 @@
           {
             "question": "Which HTML tag is used for grouping and applying styles to inline elements?",
             "answers": [
-              "<span>",
-              "<div>",
-              "<section>",
-              "<style>"
+              "&lt;span&gt;",
+              "&lt;div&gt;",
+              "&lt;section&gt;",
+              "&lt;style&gt;"
             ],
             "correct_answer": 0
           },
@@ -2391,6 +2371,1848 @@
             ],
             "correct_answer": 0
           }
+        ]
+      }
+    },    {
+      "category": "Sports",
+      "difficulties": {
+        "easy": [
+          {
+          "question": "In which sport would you perform a slam dunk?",
+          "answers": ["Basketball", "Soccer", "Tennis", "Golf"],
+          "correct_answer": 0
+        },
+        {
+          "question": "How many players are there on a standard soccer team?",
+          "answers": ["11", "9", "7", "5"],
+          "correct_answer": 0
+        },
+        {
+          "question": "What is the primary objective in American football?",
+          "answers": ["Score touchdowns or field goals", "Make three-pointers", "Score goals in a net", "Hit home runs"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which country is famous for hosting the Tour de France?",
+          "answers": ["France", "Italy", "Spain", "Germany"],
+          "correct_answer": 0
+        },
+        {
+          "question": "In which Olympic sport would you perform a vault?",
+          "answers": ["Gymnastics", "Swimming", "Track and Field", "Cycling"],
+          "correct_answer": 0
+        },
+        {
+          "question": "What is the highest score achievable in a single frame in professional bowling?",
+          "answers": ["300", "200", "100", "400"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which ball is used in a game of tennis?",
+          "answers": ["Tennis ball", "Soccer ball", "Basketball", "Golf ball"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Who is known as 'The Greatest' in boxing?",
+          "answers": ["Muhammad Ali", "Mike Tyson", "Floyd Mayweather", "Sugar Ray Leonard"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which sport is known as the 'king of sports'?",
+          "answers": ["Soccer", "Cricket", "Basketball", "Baseball"],
+          "correct_answer": 0
+        },
+        {
+          "question": "What is the scoring unit in a game of badminton?",
+          "answers": ["Point", "Goal", "Run", "Touchdown"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which country won the FIFA World Cup in 2018?",
+          "answers": ["France", "Brazil", "Germany", "Argentina"],
+          "correct_answer": 0
+        },
+        {
+          "question": "In which sport would you perform a backstroke?",
+          "answers": ["Swimming", "Track and Field", "Cycling", "Gymnastics"],
+          "correct_answer": 0
+        },
+        {
+          "question": "What is the primary objective in a game of rugby?",
+          "answers": ["Score tries", "Score touchdowns", "Score goals", "Hit home runs"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which sport involves riding waves on a board?",
+          "answers": ["Surfing", "Skiing", "Snowboarding", "Skateboarding"],
+          "correct_answer": 0
+        },
+        {
+          "question": "What is the standard number of rounds in a professional boxing match?",
+          "answers": ["12", "10", "15", "8"],
+          "correct_answer": 0
+        },
+        {
+          "question": "In which sport would you perform a free throw?",
+          "answers": ["Basketball", "Soccer", "Tennis", "Golf"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which country is associated with the sport of sumo wrestling?",
+          "answers": ["Japan", "China", "Korea", "Thailand"],
+          "correct_answer": 0
+        },
+        {
+          "question": "What is the primary objective in a game of volleyball?",
+          "answers": ["Score points by sending the ball over the net", "Score goals in a net", "Score touchdowns", "Make three-pointers"],
+          "correct_answer": 0
+        },
+        {
+          "question": "In which sport is a shuttlecock used?",
+          "answers": ["Badminton", "Tennis", "Volleyball", "Table Tennis"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which country won the most gold medals in the 2016 Summer Olympics?",
+          "answers": ["United States", "China", "Russia", "Germany"],
+          "correct_answer": 0
+        }
+        ],
+        "medium": [
+          {
+            "question": "Which city hosted the 2016 Summer Olympics?",
+            "answers": ["Rio de Janeiro", "London", "Beijing", "Tokyo"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In golf, what is the term for completing a hole in one stroke under par?",
+            "answers": ["Birdie", "Eagle", "Albatross", "Bogey"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who holds the record for the most career home runs in Major League Baseball?",
+            "answers": ["Barry Bonds", "Babe Ruth", "Hank Aaron", "Alex Rodriguez"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which country won the UEFA Euro 2020 football championship?",
+            "answers": ["Italy", "England", "France", "Germany"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In tennis, what is a 'Grand Slam'?",
+            "answers": ["Winning all four major tournaments in a calendar year", "Scoring four points in a row", "Completing a set without losing a point", "Achieving a perfect serve"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is known as the 'Rocket' in snooker?",
+            "answers": ["Ronnie O'Sullivan", "Mark Selby", "John Higgins", "Stephen Hendry"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which Formula 1 team is known as the 'Prancing Horse'?",
+            "answers": ["Ferrari", "Mercedes", "Red Bull Racing", "McLaren"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In basketball, how high is the regulation hoop?",
+            "answers": ["10 feet", "8 feet", "12 feet", "15 feet"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the all-time leading scorer in the NBA?",
+            "answers": ["Kareem Abdul-Jabbar", "LeBron James", "Kobe Bryant", "Michael Jordan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which country won the Cricket World Cup in 2019?",
+            "answers": ["England", "India", "Australia", "South Africa"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which year did the first modern Olympic Games take place?",
+            "answers": ["1896", "1900", "1920", "1936"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the most decorated Olympian of all time?",
+            "answers": ["Michael Phelps", "Usain Bolt", "Simone Biles", "Nadia Comăneci"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which NFL team has won the most Super Bowl championships?",
+            "answers": ["New England Patriots", "Pittsburgh Steelers", "San Francisco 49ers", "Dallas Cowboys"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the standard distance of a marathon race in kilometers?",
+            "answers": ["42.195 kilometers", "26.2 kilometers", "50 kilometers", "30 kilometers"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which country has won the most FIFA World Cup titles?",
+            "answers": ["Brazil", "Germany", "Italy", "Argentina"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which sport is the term 'slam dunk' commonly used?",
+            "answers": ["Basketball", "Tennis", "Golf", "Soccer"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who won the 2021 Wimbledon men's singles title?",
+            "answers": ["Novak Djokovic", "Roger Federer", "Rafael Nadal", "Andy Murray"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which horse won the Triple Crown in 2018?",
+            "answers": ["Justify", "American Pharoah", "Secretariat", "Seattle Slew"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who holds the record for the most goals scored in a single NHL season?",
+            "answers": ["Wayne Gretzky", "Mario Lemieux", "Bobby Orr", "Gordie Howe"],
+            "correct_answer": 0
+          }
+
+        ],
+        "hard": [
+          {
+            "question": "Who was the first person to run a mile in under four minutes?",
+            "answers": ["Roger Bannister", "Paavo Nurmi", "Sebastian Coe", "Steve Ovett"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which year did the 'Miracle on Ice' occur in Olympic ice hockey?",
+            "answers": ["1980", "1976", "1984", "1992"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the only tennis player to have completed the Golden Slam?",
+            "answers": ["Steffi Graf", "Serena Williams", "Roger Federer", "Rafael Nadal"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which country has won the most Rugby World Cup titles?",
+            "answers": ["New Zealand", "Australia", "South Africa", "England"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which year did the first modern Winter Olympic Games take place?",
+            "answers": ["1924", "1932", "1948", "1956"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who holds the record for the most Grand Slam singles titles in men's tennis?",
+            "answers": ["Novak Djokovic", "Roger Federer", "Rafael Nadal", "Pete Sampras"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the highest possible break in snooker?",
+            "answers": ["147", "155", "160", "180"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which athlete is known as the 'Flying Finn'?",
+            "answers": ["Paavo Nurmi", "Lasse Virén", "Hannes Kolehmainen", "Ville Ritola"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the only driver to win the Formula 1 World Championship with a team outside of Europe?",
+            "answers": ["Mario Andretti", "Ayrton Senna", "Emerson Fittipaldi", "Niki Lauda"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which year did the 'Thrilla in Manila' take place?",
+            "answers": ["1975", "1969", "1981", "1985"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which soccer player has won the FIFA Ballon d'Or the most times?",
+            "answers": ["Lionel Messi", "Cristiano Ronaldo", "Zinedine Zidane", "Michel Platini"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the only cricketer to score one hundred international centuries?",
+            "answers": ["Sachin Tendulkar", "Ricky Ponting", "Virat Kohli", "Brian Lara"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which horse won the Grand Slam of Thoroughbred Racing in 1973?",
+            "answers": ["Secretariat", "Seattle Slew", "Affirmed", "American Pharoah"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the only person to have won FIFA World Cup titles as both a player and a coach?",
+            "answers": ["Franz Beckenbauer", "Pelé", "Diego Maradona", "Zinedine Zidane"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which year did the first modern Summer Olympic Games take place?",
+            "answers": ["1896", "1900", "1904", "1912"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the only NBA player to have scored 100 points in a single game?",
+            "answers": ["Wilt Chamberlain", "Michael Jordan", "Kobe Bryant", "LeBron James"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which country has won the most gold medals in the history of the Winter Olympics?",
+            "answers": ["Norway", "United States", "Soviet Union", "Germany"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who holds the record for the most goals in a single football season in Europe's top five leagues?",
+            "answers": ["Lionel Messi", "Cristiano Ronaldo", "Thierry Henry", "Gerd Muller"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which city did the 2008 Summer Olympics take place?",
+            "answers": ["Beijing", "London", "Athens", "Rio de Janeiro"],
+            "correct_answer": 0
+          }
+
+        ]
+      }
+    },{
+      "category": "Cinema",
+      "difficulties": {
+        "easy": [
+          {
+            "question": "Who played the character of Harry Potter in the film series?",
+            "answers": ["Daniel Radcliffe", "Rupert Grint", "Emma Watson", "Tom Felton"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which animated film features a young lion cub named Simba?",
+            "answers": ["The Lion King", "Finding Nemo", "Shrek", "Toy Story"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which film did Humphrey Bogart and Ingrid Bergman play the lead roles?",
+            "answers": ["Casablanca", "Gone with the Wind", "Citizen Kane", "The Maltese Falcon"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the movie 'Jurassic Park'?",
+            "answers": ["Steven Spielberg", "James Cameron", "George Lucas", "Christopher Nolan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film features a friendly extraterrestrial with a glowing finger?",
+            "answers": ["E.T. the Extra-Terrestrial", "Close Encounters of the Third Kind", "Independence Day", "Contact"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the fictional wizarding school in the 'Harry Potter' series?",
+            "answers": ["Hogwarts School of Witchcraft and Wizardry", "Beauxbatons Academy of Magic", "Durmstrang Institute", "Ilvermorny School of Witchcraft and Wizardry"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film won the Academy Award for Best Picture in 1994?",
+            "answers": ["Forrest Gump", "The Shawshank Redemption", "Pulp Fiction", "Schindler's List"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the voice behind the character Buzz Lightyear in 'Toy Story'?",
+            "answers": ["Tim Allen", "Tom Hanks", "Don Rickles", "John Ratzenberger"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which actress played the role of Hermione Granger in the 'Harry Potter' series?",
+            "answers": ["Emma Watson", "Emma Stone", "Emma Roberts", "Emma Thompson"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'The Matrix', what is the real name of the character played by Keanu Reeves?",
+            "answers": ["Neo", "Trinity", "Morpheus", "Agent Smith"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the role of Jack Dawson in the film 'Titanic'?",
+            "answers": ["Leonardo DiCaprio", "Brad Pitt", "Tom Cruise", "Johnny Depp"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film features a young boy named Kevin McCallister who is accidentally left behind by his family during Christmas vacation?",
+            "answers": ["Home Alone", "Elf", "A Christmas Story", "The Polar Express"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'The Dark Knight'?",
+            "answers": ["Christopher Nolan", "Tim Burton", "Zack Snyder", "Joss Whedon"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which actor played the role of Tony Stark/Iron Man in the Marvel Cinematic Universe?",
+            "answers": ["Robert Downey Jr.", "Chris Hemsworth", "Chris Evans", "Mark Ruffalo"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the film 'The Shawshank Redemption', what is the name of the protagonist?",
+            "answers": ["Andy Dufresne", "Red", "Ellis Boyd 'Red' Redding", "Warden Norton"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which movie features a talking, crime-solving baby with the voice of Alec Baldwin?",
+            "answers": ["The Boss Baby", "Despicable Me", "Bee Movie", "Toy Story"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character of Katniss Everdeen in 'The Hunger Games' series?",
+            "answers": ["Jennifer Lawrence", "Emma Stone", "Shailene Woodley", "Kristen Stewart"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film tells the story of a fish named Marlin searching for his son Nemo?",
+            "answers": ["Finding Nemo", "The Little Mermaid", "Shark Tale", "Dory's Adventure"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'Avatar'?",
+            "answers": ["James Cameron", "Peter Jackson", "George Lucas", "Steven Spielberg"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which movie features a group of toys that come to life when humans are not around?",
+            "answers": ["Toy Story", "The Lego Movie", "Brave Little Toaster", "Ratatouille"],
+            "correct_answer": 0
+          }
+        ],
+        "medium": [
+          {
+            "question": "Who directed the film 'Inception'?",
+            "answers": ["Christopher Nolan", "Quentin Tarantino", "Martin Scorsese", "David Fincher"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'The Godfather', who played the role of Michael Corleone?",
+            "answers": ["Al Pacino", "Marlon Brando", "Robert De Niro", "James Caan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film won the Academy Award for Best Animated Feature in 2001?",
+            "answers": ["Shrek", "Finding Nemo", "Toy Story 2", "The Incredibles"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character of Edward Scissorhands in the film of the same name?",
+            "answers": ["Johnny Depp", "Leonardo DiCaprio", "Tom Cruise", "Brad Pitt"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which actor portrayed the character Hannibal Lecter in 'The Silence of the Lambs'?",
+            "answers": ["Anthony Hopkins", "Jodie Foster", "Julianne Moore", "Edward Norton"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'Forrest Gump'?",
+            "answers": ["Robert Zemeckis", "Steven Spielberg", "Ron Howard", "Tom Hanks"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which movie features a character named Jack Dawson and takes place aboard the Titanic?",
+            "answers": ["Titanic", "The Poseidon Adventure", "The Abyss", "Waterworld"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Wizard of Oz', what is the name of Dorothy's dog?",
+            "answers": ["Toto", "Buddy", "Max", "Rover"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the role of the Joker in Christopher Nolan's 'The Dark Knight'?",
+            "answers": ["Heath Ledger", "Jack Nicholson", "Joaquin Phoenix", "Cesar Romero"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the film 'The Breakfast Club', which character is known as 'The Brain'?",
+            "answers": ["Brian Johnson", "John Bender", "Claire Standish", "Andrew Clark"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'Schindler's List'?",
+            "answers": ["Steven Spielberg", "Martin Scorsese", "Quentin Tarantino", "Roman Polanski"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which actress won the Academy Award for Best Actress for her role in 'Silver Linings Playbook'?",
+            "answers": ["Jennifer Lawrence", "Natalie Portman", "Cate Blanchett", "Meryl Streep"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the lead role of Maximus in the film 'Gladiator'?",
+            "answers": ["Russell Crowe", "Joaquin Phoenix", "Gerard Butler", "Christian Bale"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'Back to the Future', what is the name of Doc Brown's time-traveling car?",
+            "answers": ["DeLorean", "Mustang", "Camaro", "Corvette"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film is known for the line 'Here's looking at you, kid'?",
+            "answers": ["Casablanca", "Gone with the Wind", "Citizen Kane", "The Maltese Falcon"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'Avatar'?",
+            "answers": ["James Cameron", "Peter Jackson", "Christopher Nolan", "Steven Spielberg"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which movie features a character named Jack Dawson and takes place aboard the Titanic?",
+            "answers": ["Titanic", "The Poseidon Adventure", "The Abyss", "Waterworld"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the role of Tony Stark/Iron Man in the Marvel Cinematic Universe?",
+            "answers": ["Robert Downey Jr.", "Chris Hemsworth", "Chris Evans", "Mark Ruffalo"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'The Matrix', who plays the character Morpheus?",
+            "answers": ["Laurence Fishburne", "Keanu Reeves", "Hugo Weaving", "Carrie-Anne Moss"],
+            "correct_answer": 0
+          }
+
+        ],
+        "hard": [
+          {
+            "question": "Which film is known for its complex narrative structure involving multiple interconnected storylines and characters?",
+            "answers": ["Pulp Fiction", "Memento", "The Usual Suspects", "Inception"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'The Shawshank Redemption', what is the name of the prison?",
+            "answers": ["Shawshank State Penitentiary", "Alcatraz Federal Penitentiary", "Sing Sing Correctional Facility", "San Quentin State Prison"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'The Pianist', which tells the story of a Polish-Jewish pianist and his struggle for survival during World War II?",
+            "answers": ["Roman Polanski", "Steven Spielberg", "Martin Scorsese", "Quentin Tarantino"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which actor portrayed the character Vito Corleone in 'The Godfather' and won an Academy Award for Best Actor?",
+            "answers": ["Marlon Brando", "Al Pacino", "Robert De Niro", "James Caan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'One Flew Over the Cuckoo's Nest', who played the character Randle P. McMurphy?",
+            "answers": ["Jack Nicholson", "Dustin Hoffman", "Robert De Niro", "Al Pacino"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film won the Academy Award for Best Picture in 2008?",
+            "answers": ["No Country for Old Men", "Slumdog Millionaire", "The Dark Knight", "There Will Be Blood"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'Eternal Sunshine of the Spotless Mind'?",
+            "answers": ["Michel Gondry", "Spike Jonze", "Charlie Kaufman", "Christopher Nolan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'Apocalypse Now', who played the character Colonel Walter E. Kurtz?",
+            "answers": ["Marlon Brando", "Martin Sheen", "Robert Duvall", "Dennis Hopper"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film is based on the true story of a man who spends years in prison for a crime he didn't commit, only to escape and seek revenge?",
+            "answers": ["The Count of Monte Cristo", "The Fugitive", "Shawshank Redemption", "Escape from Alcatraz"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'A Clockwork Orange'?",
+            "answers": ["Stanley Kubrick", "David Lynch", "Alfred Hitchcock", "Francis Ford Coppola"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Silence of the Lambs', what is the name of the brilliant but insane serial killer?",
+            "answers": ["Hannibal Lecter", "Buffalo Bill", "Red Dragon", "Clarice Starling"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film is known for its iconic line, 'You can't handle the truth!'?",
+            "answers": ["A Few Good Men", "The Verdict", "The Firm", "The Rainmaker"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who won the Academy Award for Best Actor for his role in the film 'The Revenant'?",
+            "answers": ["Leonardo DiCaprio", "Joaquin Phoenix", "Matthew McConaughey", "Daniel Day-Lewis"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In the movie 'The Departed', who played the character Frank Costello?",
+            "answers": ["Jack Nicholson", "Leonardo DiCaprio", "Matt Damon", "Mark Wahlberg"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who directed the film 'Citizen Kane'?",
+            "answers": ["Orson Welles", "Alfred Hitchcock", "Francis Ford Coppola", "Steven Spielberg"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Matrix', who is 'The Architect'?",
+            "answers": ["Helmut Bakaitis", "Hugo Weaving", "Keanu Reeves", "Laurence Fishburne"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film is based on the life of mathematician John Nash, who struggles with schizophrenia?",
+            "answers": ["A Beautiful Mind", "Good Will Hunting", "The Theory of Everything", "Rain Man"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the lead role in the film 'Lawrence of Arabia'?",
+            "answers": ["Peter O'Toole", "Alec Guinness", "Anthony Quinn", "Omar Sharif"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which film features a character named Travis Bickle, portrayed by Robert De Niro?",
+            "answers": ["Taxi Driver", "Raging Bull", "The Deer Hunter", "Goodfellas"],
+            "correct_answer": 0
+          }
+
+        ]
+      }
+    },{
+      "category": "TV Shows",
+      "difficulties": {
+        "easy": [
+          {
+            "question": "In 'Friends', what is the name of Ross and Monica's sister?",
+            "answers": ["Rachel", "Phoebe", "Emily", "Janice"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which animated TV series follows the adventures of a yellow-skinned family living in the town of Springfield?",
+            "answers": ["The Simpsons", "Family Guy", "American Dad!", "South Park"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the host of 'The Late Show with Stephen Colbert'?",
+            "answers": ["Stephen Colbert", "Jimmy Fallon", "Jimmy Kimmel", "Conan O'Brien"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show features a high school teacher turned methamphetamine manufacturer?",
+            "answers": ["Breaking Bad", "The Sopranos", "The Wire", "Mad Men"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the fictional continent in 'Game of Thrones'?",
+            "answers": ["Westeros", "Essos", "Sothoryos", "Ulthos"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Stranger Things', what is the name of the parallel dimension?",
+            "answers": ["The Upside Down", "The Other Side", "The Netherworld", "The Dark Realm"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Michael Scott in the US version of 'The Office'?",
+            "answers": ["Steve Carell", "John Krasinski", "Rainn Wilson", "B.J. Novak"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV series revolves around a group of survivors in a post-apocalyptic world overrun by zombies?",
+            "answers": ["The Walking Dead", "Fear the Walking Dead", "Z Nation", "World War Z"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the creator of 'The Twilight Zone'?",
+            "answers": ["Rod Serling", "Alfred Hitchcock", "Steven Spielberg", "Jordan Peele"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which show features a brilliant but eccentric detective named Sherlock Holmes?",
+            "answers": ["Sherlock", "Elementary", "Dexter", "Buffy the Vampire Slayer"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the spaceship in 'Firefly'?",
+            "answers": ["Serenity", "Galactica", "Enterprise", "Millennium Falcon"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Big Bang Theory', what is Sheldon's last name?",
+            "answers": ["Cooper", "Hofstadter", "Wolowitz", "Koothrappali"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show is set in the fictional town of Hawkins, Indiana, in the 1980s?",
+            "answers": ["Stranger Things", "The X-Files", "Twin Peaks", "E.T. the Extra-Terrestrial"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the protagonist in 'Doctor Who'?",
+            "answers": ["The Doctor", "The Master", "Captain Jack Harkness", "Rose Tyler"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Friends', what is the name of Joey's penguin?",
+            "answers": ["Huggsy", "Waddles", "Slippy", "Chilly Willy"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV series features a group of young friends living in New York City, dealing with relationships and careers?",
+            "answers": ["Friends", "How I Met Your Mother", "New Girl", "The Office"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who plays the character Daenerys Targaryen in 'Game of Thrones'?",
+            "answers": ["Emilia Clarke", "Sophie Turner", "Lena Headey", "Maisie Williams"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show is set in the fictional town of Pawnee, Indiana?",
+            "answers": ["Parks and Recreation", "The Office", "Brooklyn Nine-Nine", "Community"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the voice of Homer Simpson in 'The Simpsons'?",
+            "answers": ["Dan Castellaneta", "Harry Shearer", "Hank Azaria", "Matt Groening"],
+            "correct_answer": 0
+          }
+        ],
+        "medium": [
+          {
+            "question": "In 'Breaking Bad', what is the street name of Walter White's blue meth?",
+            "answers": ["Blue Sky", "Crystal Clear", "Ice Queen", "Pure Bliss"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Jon Snow in 'Game of Thrones'?",
+            "answers": ["Kit Harington", "Richard Madden", "Nikolaj Coster-Waldau", "Peter Dinklage"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show features a forensic anthropologist named Temperance Brennan?",
+            "answers": ["Bones", "Criminal Minds", "CSI: Crime Scene Investigation", "Dexter"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the creator of the TV series 'Black Mirror'?",
+            "answers": ["Charlie Brooker", "J.J. Abrams", "Ryan Murphy", "David Lynch"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Stranger Things', what is the name of Eleven's supernatural abilities?",
+            "answers": ["Telekinesis", "Pyrokinesis", "Telepathy", "Chronokinesis"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show follows the lives of a group of individuals living in Los Angeles, California?",
+            "answers": ["The OC", "90210", "Friends", "Melrose Place"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Walking Dead', what is the name of the baseball bat covered in barbed wire wielded by the antagonist Negan?",
+            "answers": ["Lucille", "Maggie", "Rosita", "Daryl"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Walter Bishop in the TV series 'Fringe'?",
+            "answers": ["John Noble", "Joshua Jackson", "Anna Torv", "Lance Reddick"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the coffee shop in 'Friends' where the characters often hang out?",
+            "answers": ["Central Perk", "Java Junction", "Perk Place", "Coffee Central"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV series features a high school chemistry teacher turned methamphetamine manufacturer?",
+            "answers": ["Breaking Bad", "The Sopranos", "The Wire", "Mad Men"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Office', who is the regional manager of Dunder Mifflin's Scranton branch?",
+            "answers": ["Michael Scott", "Dwight Schrute", "Jim Halpert", "Ryan Howard"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show is a mockumentary-style sitcom that follows the lives of employees at the Dunder Mifflin paper company?",
+            "answers": ["The Office", "Parks and Recreation", "Brooklyn Nine-Nine", "Community"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the creator of 'The X-Files'?",
+            "answers": ["Chris Carter", "Joss Whedon", "David Duchovny", "Gillian Anderson"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Game of Thrones', what is the name of Arya Stark's sword?",
+            "answers": ["Needle", "Ice", "Oathkeeper", "Widow's Wail"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV series features a group of individuals who form a study group at Greendale Community College?",
+            "answers": ["Community", "Parks and Recreation", "Brooklyn Nine-Nine", "The Office"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Stranger Things', what is the name of the parallel dimension?",
+            "answers": ["The Upside Down", "The Other Side", "The Netherworld", "The Dark Realm"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who plays the character Saul Goodman in 'Breaking Bad' and its prequel 'Better Call Saul'?",
+            "answers": ["Bob Odenkirk", "Jonathan Banks", "Giancarlo Esposito", "Bryan Cranston"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show features a group of friends living in New York City who frequently hang out at a bar called MacLaren's?",
+            "answers": ["How I Met Your Mother", "Friends", "Seinfeld", "Cheers"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Tyrion Lannister in 'Game of Thrones'?",
+            "answers": ["Peter Dinklage", "Nikolaj Coster-Waldau", "Kit Harington", "Emilia Clarke"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the parallel universe featured in the TV series 'Fringe'?",
+            "answers": ["The Other Side", "The Upside Down", "The Mirror Realm", "The Netherworld"],
+            "correct_answer": 0
+          }
+
+        ],
+        "hard": [
+          {
+            "question": "In 'The Sopranos', what is the name of Tony Soprano's psychiatrist?",
+            "answers": ["Dr. Jennifer Melfi", "Dr. Lorraine Bracco", "Dr. Carmela Soprano", "Dr. Elliot Kupferberg"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Stringer Bell in 'The Wire'?",
+            "answers": ["Idris Elba", "Michael K. Williams", "Dominic West", "Andre Royo"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Westworld', what is the name of the futuristic theme park where guests can interact with android hosts?",
+            "answers": ["Delos", "Mesa Gold", "Aeden Park", "Everworld"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Don Draper in the TV series 'Mad Men'?",
+            "answers": ["Jon Hamm", "Bryan Cranston", "Matthew Weiner", "John Slattery"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Black Mirror', what is the title of the episode that explores the consequences of social media interactions?",
+            "answers": ["Nosedive", "White Christmas", "San Junipero", "USS Callister"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV show features a high school chemistry teacher turned methamphetamine manufacturer?",
+            "answers": ["Breaking Bad", "The Sopranos", "The Wire", "Mad Men"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Handmaid's Tale', what is the name of the oppressive regime that controls the society?",
+            "answers": ["The Republic of Gilead", "The United States of America", "The New Order", "The Dominion"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who created the TV series 'The Twilight Zone'?",
+            "answers": ["Rod Serling", "Alfred Hitchcock", "Jordan Peele", "Charlie Brooker"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Fargo', what is the name of the character portrayed by Billy Bob Thornton in the first season?",
+            "answers": ["Lorne Malvo", "Jerry Lundegaard", "Gus Grimly", "Molly Solverson"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Carrie Mathison in the TV series 'Homeland'?",
+            "answers": ["Claire Danes", "Mandy Patinkin", "Damian Lewis", "Rupert Friend"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The West Wing', who played the character Josh Lyman?",
+            "answers": ["Bradley Whitford", "Martin Sheen", "Rob Lowe", "Allison Janney"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which TV series features a family of dysfunctional super-powered siblings with extraordinary abilities?",
+            "answers": ["The Umbrella Academy", "Heroes", "Misfits", "Alphas"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who created the TV series 'The Wire'?",
+            "answers": ["David Simon", "George Pelecanos", "Ed Burns", "Richard Price"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Westworld', what is the name of the character played by Evan Rachel Wood, who is the oldest host in the park?",
+            "answers": ["Dolores Abernathy", "Maeve Millay", "Clementine Pennyfeather", "Angela"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the showrunner and creator of 'Breaking Bad'?",
+            "answers": ["Vince Gilligan", "David Chase", "Matthew Weiner", "Aaron Paul"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Americans', what is the real name of the KGB officer known by the alias 'Philip Jennings'?",
+            "answers": ["Misha", "Mikhail", "Mischa", "Oleg"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Dexter Morgan in the TV series 'Dexter'?",
+            "answers": ["Michael C. Hall", "David Zayas", "Jennifer Carpenter", "James Remar"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Black Mirror', what is the title of the episode that explores the consequences of rating individuals on a social media platform?",
+            "answers": ["Nosedive", "White Christmas", "San Junipero", "USS Callister"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who played the character Tony Stark/Iron Man in the TV series 'Iron Man: Armored Adventures'?",
+            "answers": ["Adrian Petriw", "Robert Downey Jr.", "Josh Keaton", "Jack Angel"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'Sherlock', what is the name of the criminal mastermind portrayed by Andrew Scott?",
+            "answers": ["Jim Moriarty", "Charles Augustus Magnussen", "Sebastian Moran", "Irene Adler"],
+            "correct_answer": 0
+          }
+
+        ]
+      }
+    },{
+      "category": "Music",
+      "difficulties": {
+        "easy": [
+          {
+            "question": "Who is known as the 'King of Pop'?",
+            "answers": ["Michael Jackson", "Elvis Presley", "Prince", "Justin Timberlake"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which band is famous for the song 'Bohemian Rhapsody'?",
+            "answers": ["Queen", "The Beatles", "Led Zeppelin", "The Rolling Stones"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the lead vocalist of the rock band Nirvana?",
+            "answers": ["Kurt Cobain", "Eddie Vedder", "Chris Cornell", "Dave Grohl"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the best-selling album of all time?",
+            "answers": ["Thriller by Michael Jackson", "Back in Black by AC/DC", "The Dark Side of the Moon by Pink Floyd", "Abbey Road by The Beatles"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which singer is known as the 'Queen of Soul'?",
+            "answers": ["Aretha Franklin", "Whitney Houston", "Mariah Carey", "Beyoncé"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the song 'Like a Rolling Stone'?",
+            "answers": ["Bob Dylan", "Bruce Springsteen", "Johnny Cash", "Elton John"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which musical genre originated in Jamaica in the late 1960s?",
+            "answers": ["Reggae", "Salsa", "Hip Hop", "Country"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead guitarist of the band Guns N' Roses?",
+            "answers": ["Slash", "Jimmy Page", "Eddie Van Halen", "Keith Richards"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which artist is known for hits like 'Purple Haze' and 'Hey Joe'?",
+            "answers": ["Jimi Hendrix", "Eric Clapton", "Stevie Ray Vaughan", "Carlos Santana"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the real name of rapper Eminem?",
+            "answers": ["Marshall Mathers", "Curtis Jackson", "Shawn Carter", "Dwayne Carter"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which female singer released the album '21' with hits like 'Rolling in the Deep'?",
+            "answers": ["Adele", "Taylor Swift", "Beyoncé", "Rihanna"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What iconic festival in the 1960s featured performances by Jimi Hendrix, The Who, and Janis Joplin?",
+            "answers": ["Woodstock", "Monterey Pop Festival", "Isle of Wight Festival", "Coachella"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is known as the 'Queen of Pop'?",
+            "answers": ["Madonna", "Lady Gaga", "Britney Spears", "Katy Perry"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which boy band rose to fame in the 1990s with hits like 'I Want It That Way'?",
+            "answers": ["Backstreet Boys", "NSYNC", "98 Degrees", "New Kids on the Block"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead singer of the band U2?",
+            "answers": ["Bono", "Chris Martin", "Brandon Flowers", "Thom Yorke"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which legendary guitarist is known for his signature guitar, named 'Lucille'?",
+            "answers": ["B.B. King", "Eric Clapton", "Jimi Hendrix", "Chuck Berry"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What song became the longest-running No. 1 hit on the Billboard Hot 100 chart?",
+            "answers": ["Old Town Road by Lil Nas X", "Despacito by Luis Fonsi", "Shape of You by Ed Sheeran", "One Sweet Day by Mariah Carey and Boyz II Men"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead singer of the band Queen?",
+            "answers": ["Freddie Mercury", "Roger Taylor", "Brian May", "John Deacon"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which famous singer is known as the 'Rocket Man'?",
+            "answers": ["Elton John", "David Bowie", "Billy Joel", "Paul McCartney"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of Taylor Swift's debut album?",
+            "answers": ["Taylor Swift", "Fearless", "Speak Now", "Red"],
+            "correct_answer": 0
+          }
+        ],
+        "medium": [
+          {
+            "question": "Which British rock band released the album 'The Wall'?",
+            "answers": ["Pink Floyd", "The Rolling Stones", "The Who", "Led Zeppelin"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is known as the 'Godfather of Soul'?",
+            "answers": ["James Brown", "Ray Charles", "Otis Redding", "Stevie Wonder"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did The Beatles release their iconic album 'Sgt. Pepper's Lonely Hearts Club Band'?",
+            "answers": ["1967", "1965", "1969", "1971"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which female artist sang about being a 'Material Girl' in the 1980s?",
+            "answers": ["Madonna", "Cyndi Lauper", "Whitney Houston", "Janet Jackson"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the song 'Ain't No Sunshine'?",
+            "answers": ["Bill Withers", "Al Green", "Marvin Gaye", "Ray Charles"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which band is famous for the song 'Sweet Child o' Mine'?",
+            "answers": ["Guns N' Roses", "Aerosmith", "Bon Jovi", "Def Leppard"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the real name of rapper Snoop Dogg?",
+            "answers": ["Calvin Broadus", "Andre Young", "Marshall Mathers", "Jay-Z"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead singer of the band Radiohead?",
+            "answers": ["Thom Yorke", "Jonny Greenwood", "Colin Greenwood", "Phil Selway"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which artist recorded the hit song 'I Will Always Love You'?",
+            "answers": ["Whitney Houston", "Celine Dion", "Mariah Carey", "Adele"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did Michael Jackson release the album 'Thriller'?",
+            "answers": ["1982", "1984", "1986", "1988"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead guitarist of the band U2?",
+            "answers": ["The Edge", "Bono", "Adam Clayton", "Larry Mullen Jr."],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which song by The Police includes the lyrics 'Roxanne, you don't have to put on the red light'?",
+            "answers": ["Roxanne", "Every Breath You Take", "Message in a Bottle", "Don't Stand So Close to Me"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the first music video ever played on MTV?",
+            "answers": ["Video Killed the Radio Star by The Buggles", "Thriller by Michael Jackson", "Money for Nothing by Dire Straits", "Sweet Child o' Mine by Guns N' Roses"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead vocalist of the band Coldplay?",
+            "answers": ["Chris Martin", "Jonny Buckland", "Guy Berryman", "Will Champion"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which artist is known for hits like 'Can't Stop the Feeling!' and 'Cry Me a River'?",
+            "answers": ["Justin Timberlake", "Bruno Mars", "Ed Sheeran", "Pharrell Williams"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the lead singer of the band Fleetwood Mac?",
+            "answers": ["Stevie Nicks", "Lindsey Buckingham", "Christine McVie", "Mick Fleetwood"],
+            " correct_answer": 0
+          },
+          {
+            "question": "What is the real name of the rapper known as Eminem?",
+            "answers": ["Marshall Mathers", "Curtis Jackson", "Shawn Carter", "Dwayne Carter"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which iconic singer was known as the 'Queen of Disco'?",
+            "answers": ["Donna Summer", "Gloria Gaynor", "Chaka Khan", "Diana Ross"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did Elvis Presley pass away?",
+            "answers": ["1977", "1964", "1983", "1991"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which band released the hit song 'Hotel California'?",
+            "answers": ["Eagles", "Led Zeppelin", "The Rolling Stones", "Fleetwood Mac"],
+            "correct_answer": 0
+          }
+
+        ],
+        "hard": [
+          {
+            "question": "Which composer is known for his 'Moonlight Sonata' and 'Fur Elise'?",
+            "answers": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of David Bowie's final studio album released in 2016, just two days before his death?",
+            "answers": ["Blackstar", "The Next Day", "Reality", "Heathen"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which rock band's lead vocalist is known as 'The Lizard King'?",
+            "answers": ["The Doors", "Led Zeppelin", "The Rolling Stones", "The Who"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is often referred to as the 'Father of the Blues'?",
+            "answers": ["W.C. Handy", "B.B. King", "Muddy Waters", "Robert Johnson"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which artist's real name is Stefani Joanne Angelina Germanotta?",
+            "answers": ["Lady Gaga", "Katy Perry", "Adele", "Rihanna"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Prince's 1987 double album?",
+            "answers": ["Sign o' the Times", "Purple Rain", "1999", "Diamonds and Pearls"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who composed the opera 'The Marriage of Figaro'?",
+            "answers": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Giuseppe Verdi", "Richard Wagner"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which composer is known for 'The Four Seasons'?",
+            "answers": ["Antonio Vivaldi", "Johann Sebastian Bach", "George Frideric Handel", "Franz Joseph Haydn"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Bob Dylan's Nobel Prize-winning song?",
+            "answers": ["Blowin' in the Wind", "The Times They Are a-Changin'", "Like a Rolling Stone", "A Hard Rain's a-Gonna Fall"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which classical composer was known for his 'Symphony No. 9' and 'Ode to Joy'?",
+            "answers": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Franz Schubert", "Johannes Brahms"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the real name of the rapper known as Jay-Z?",
+            "answers": ["Shawn Carter", "Dwayne Carter", "Curtis Jackson", "Kanye West"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the rock opera 'Tommy'?",
+            "answers": ["The Who", "Pink Floyd", "The Rolling Stones", "Led Zeppelin"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which jazz trumpeter was known for his contributions to the development of bebop?",
+            "answers": ["Dizzy Gillespie", "Miles Davis", "Louis Armstrong", "Chet Baker"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Radiohead's groundbreaking album released in 1997?",
+            "answers": ["OK Computer", "Kid A", "The Bends", "In Rainbows"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who composed the famous opera 'Carmen'?",
+            "answers": ["Georges Bizet", "Giacomo Puccini", "Richard Wagner", "Gioachino Rossini"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Led Zeppelin's fourth studio album, often referred to as 'Untitled' or 'Four Symbols'?",
+            "answers": ["Led Zeppelin IV", "Physical Graffiti", "Houses of the Holy", "Presence"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which legendary musician was known as 'The King of Ragtime'?",
+            "answers": ["Scott Joplin", "Louis Armstrong", "Benny Goodman", "Duke Ellington"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the real name of the rapper known as Nas?",
+            "answers": ["Nasir Jones", "Jay-Z", "Eminem", "Kendrick Lamar"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the song 'A Day in the Life', featured on The Beatles' album 'Sgt. Pepper's Lonely Hearts Club Band'?",
+            "answers": ["John Lennon and Paul McCartney", "George Harrison", "Ringo Starr", "Bob Dylan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of the Rolling Stones' album released in 1972, featuring the famous lips and tongue logo?",
+            "answers": ["Exile on Main St.", "Sticky Fingers", "Let It Bleed", "Beggars Banquet"],
+            "correct_answer": 0
+          }
+
+        ]
+      }
+    },{
+      "category": "General History",
+      "difficulties": {
+        "easy": [
+          {
+            "question": "Who was the first President of the United States?",
+            "answers": ["George Washington", "Thomas Jefferson", "John Adams", "James Madison"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did Christopher Columbus first reach the Americas?",
+            "answers": ["1492", "1500", "1607", "1776"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient civilization built the pyramids of Giza?",
+            "answers": ["Egyptians", "Romans", "Greeks", "Persians"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the 'Declaration of Independence' for the United States?",
+            "answers": ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What event marked the end of World War II in 1945?",
+            "answers": ["Atomic bombings of Hiroshima and Nagasaki", "D-Day Invasion", "Battle of Stalingrad", "Pearl Harbor Attack"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the leader of Nazi Germany during World War II?",
+            "answers": ["Adolf Hitler", "Joseph Stalin", "Benito Mussolini", "Emperor Hirohito"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the Titanic sink?",
+            "answers": ["1912", "1905", "1920", "1931"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which famous queen ruled England from 1558 to 1603?",
+            "answers": ["Elizabeth I", "Victoria", "Mary I", "Anne"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What ancient wonder was located in the city of Babylon?",
+            "answers": ["Hanging Gardens", "Colossus of Rhodes", "Great Pyramid of Giza", "Statue of Zeus at Olympia"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is known for leading the civil rights movement in the United States?",
+            "answers": ["Martin Luther King Jr.", "Malcolm X", "Rosa Parks", "Harriet Tubman"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the United States gain its independence from Great Britain?",
+            "answers": ["1776", "1789", "1803", "1812"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient empire was centered in the city of Rome?",
+            "answers": ["Roman Empire", "Greek Empire", "Persian Empire", "Byzantine Empire"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What event is often considered the start of World War I?",
+            "answers": ["Assassination of Archduke Franz Ferdinand", "Battle of the Somme", "Treaty of Versailles", "Fall of the Ottoman Empire"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the first woman to win a Nobel Prize?",
+            "answers": ["Marie Curie", "Rosa Parks", "Amelia Earhart", "Jane Addams"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient civilization is known for its contributions to philosophy, democracy, and theater?",
+            "answers": ["Greeks", "Romans", "Persians", "Egyptians"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+            "answers": ["Nikita Khrushchev", "Joseph Stalin", "Vladimir Putin", "Mikhail Gorbachev"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the period of renewed interest in art, culture, and learning in Europe during the 14th-17th centuries called?",
+            "answers": ["Renaissance", "Enlightenment", "Baroque", "Industrial Revolution"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+            "answers": ["Amelia Earhart", "Bessie Coleman", "Harriet Quimby", "Jacqueline Cochran"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the Berlin Wall fall, marking the end of the Cold War?",
+            "answers": ["1989", "1991", "1975", "1962"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What event is often considered the beginning of the Great Depression?",
+            "answers": ["Stock Market Crash of 1929", "World War I", "Prohibition", "Dust Bowl"],
+            "correct_answer": 0
+          }
+        ],
+        "medium": [
+          {
+            "question": "Which medieval conflict between England and France lasted from 1337 to 1453?",
+            "answers": ["Hundred Years' War", "War of the Roses", "Wars of the Three Kingdoms", "Crusades"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the Egyptian queen famous for her relationships with Julius Caesar and Mark Antony?",
+            "answers": ["Cleopatra", "Nefertiti", "Hatshepsut", "Isis"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the United States declare its independence from Britain?",
+            "answers": ["1776", "1789", "1765", "1804"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient civilization built the city of Machu Picchu in the 15th century?",
+            "answers": ["Inca", "Aztec", "Maya", "Olmec"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What event led to the formation of the European Union in 1993?",
+            "answers": ["Maastricht Treaty", "Treaty of Rome", "Schengen Agreement", "Treaty of Lisbon"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the famous nurse during the Crimean War and a pioneer of modern nursing?",
+            "answers": ["Florence Nightingale", "Clara Barton", "Mary Seacole", "Dorothea Dix"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient city was known for its Hanging Gardens, one of the Seven Wonders of the Ancient World?",
+            "answers": ["Babylon", "Athens", "Jerusalem", "Thebes"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the Berlin Wall fall, symbolizing the end of the Cold War?",
+            "answers": ["1989", "1991", "1985", "1979"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the first emperor of China, known for the Terracotta Army?",
+            "answers": ["Qin Shi Huang", "Han Wudi", "Emperor Wu", "Kangxi Emperor"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the main cause of the Irish Potato Famine in the mid-19th century?",
+            "answers": ["Potato Blight", "Drought", "War", "Pest infestation"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which military leader and statesman led the Soviet Union during World War II?",
+            "answers": ["Joseph Stalin", "Nikita Khrushchev", "Vladimir Lenin", "Leon Trotsky"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the first woman to receive a Ph.D. in computer science?",
+            "answers": ["Grace Hopper", "Ada Lovelace", "Barbara Liskov", "Karen Sparck Jones"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What event marked the beginning of the Protestant Reformation in 1517?",
+            "answers": ["Ninety-Five Theses", "Council of Trent", "Peace of Augsburg", "Edict of Nantes"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which U.S. president delivered the Gettysburg Address during the Civil War?",
+            "answers": ["Abraham Lincoln", "Andrew Johnson", "Ulysses S. Grant", "James Buchanan"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What ancient civilization was known for its alphabet and city-states like Athens and Sparta?",
+            "answers": ["Greece", "Rome", "Egypt", "Persia"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the leader of the Soviet Union when the Berlin Wall was built in 1961?",
+            "answers": ["Nikita Khrushchev", "Joseph Stalin", "Leonid Brezhnev", "Mikhail Gorbachev"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the Battle of Hastings take place?",
+            "answers": ["1066", "1215", "1348", "1492"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which medieval queen is known for her role in the Hundred Years' War and the Battle of Orleans?",
+            "answers": ["Joan of Arc", "Eleanor of Aquitaine", "Isabella I of Castile", "Margaret of Anjou"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the main cause of the Black Death in the 14th century?",
+            "answers": ["Bubonic Plague", "Cholera", "Smallpox", "Influenza"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which U.S. state was the first to secede from the Union before the Civil War?",
+            "answers": ["South Carolina", "Virginia", "Georgia", "Texas"],
+            "correct_answer": 0
+          }
+
+        ],
+        "hard": [
+          {
+            "question": "During which war did the Battle of Gettysburg take place?",
+            "answers": ["American Civil War", "World War I", "Napoleonic Wars", "War of 1812"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the longest-reigning monarch in British history?",
+            "answers": ["Queen Victoria", "King George III", "Queen Elizabeth II", "King Henry VIII"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the name of the ship that carried the Pilgrims to America in 1620?",
+            "answers": ["Mayflower", "Santa Maria", "Nina", "Discovery"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the Roman general and statesman known for his crossing of the Alps during the Second Punic War?",
+            "answers": ["Hannibal", "Julius Caesar", "Scipio Africanus", "Augustus"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the name of the first artificial Earth satellite, launched by the Soviet Union in 1957?",
+            "answers": ["Sputnik 1", "Explorer 1", "Vanguard 1", "Cosmos 1"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the famous naval officer and explorer known for his circumnavigation of the Earth in the 16th century?",
+            "answers": ["Ferdinand Magellan", "Christopher Columbus", "James Cook", "Sir Francis Drake"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient philosopher is often credited as the 'Father of Western Philosophy'?",
+            "answers": ["Socrates", "Plato", "Aristotle", "Heraclitus"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the Russian Revolution lead to the establishment of the Soviet Union?",
+            "answers": ["1917", "1923", "1905", "1932"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the last pharaoh of Ancient Egypt?",
+            "answers": ["Cleopatra VII", "Ramesses II", "Hatshepsut", "Akhenaten"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What historical event is the novel 'A Tale of Two Cities' by Charles Dickens set against?",
+            "answers": ["French Revolution", "American Civil War", "Napoleonic Wars", "Industrial Revolution"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which ancient wonder was located in the city of Ephesus and dedicated to the goddess Artemis?",
+            "answers": ["Temple of Artemis", "Hanging Gardens", "Colossus of Rhodes", "Great Pyramid of Giza"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the first emperor of the Roman Empire?",
+            "answers": ["Augustus", "Julius Caesar", "Nero", "Caligula"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What ancient city is often considered the birthplace of democracy?",
+            "answers": ["Athens", "Sparta", "Rome", "Thebes"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the English monarch during the time of the Spanish Armada in 1588?",
+            "answers": ["Elizabeth I", "Henry VIII", "Mary I", "James I"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the name of the ship that Captain James Cook commanded on his first voyage to the Pacific?",
+            "answers": ["Endeavour", "Discovery", "Resolution", "Bounty"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the influential military and political leader of France during the French Revolution and Napoleonic Wars?",
+            "answers": ["Napoleon Bonaparte", "Louis XIV", "Robespierre", "Marie Antoinette"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In what year did the Cuban Missile Crisis bring the United States and the Soviet Union to the brink of nuclear war?",
+            "answers": ["1962", "1956", "1971", "1985"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who was the Aztec emperor at the time of the Spanish conquest led by Hernán Cortés?",
+            "answers": ["Moctezuma II", "Atahualpa", "Montezuma I", "Cuauhtémoc"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What was the name of the treaty that officially ended World War I?",
+            "answers": ["Treaty of Versailles", "Treaty of Brest-Litovsk", "Treaty of Trianon", "Treaty of Sevres"],
+            "correct_answer": 0
+          }
+
+        ]
+      }
+    },{
+      "category": "Literature",
+      "difficulties": {
+        "easy": [
+          {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "answers": ["William Shakespeare", "Jane Austen", "Charles Dickens", "Mark Twain"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of J.K. Rowling's first 'Harry Potter' book?",
+            "answers": ["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban", "Harry Potter and the Goblet of Fire"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In which novel do characters live in a dystopian society divided into districts?",
+            "answers": ["The Hunger Games", "Divergent", "The Maze Runner", "The Giver"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "answers": ["Harper Lee", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the hobbit protagonist in 'The Lord of the Rings'?",
+            "answers": ["Frodo Baggins", "Samwise Gamgee", "Bilbo Baggins", "Aragorn"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which classic novel begins with the line 'Call me Ishmael'?",
+            "answers": ["Moby-Dick", "Pride and Prejudice", "The Great Gatsby", "Jane Eyre"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the play 'Macbeth'?",
+            "answers": ["William Shakespeare", "Arthur Miller", "Henrik Ibsen", "Anton Chekhov"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the lion in C.S. Lewis's 'The Chronicles of Narnia'?",
+            "answers": ["Aslan", "Simba", "Mufasa", "Scar"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In '1984' by George Orwell, what is the totalitarian regime known as?",
+            "answers": ["Oceania", "Eurasia", "Eastasia", "The Ministry of Truth"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'The Catcher in the Rye'?",
+            "answers": ["J.D. Salinger", "F. Scott Fitzgerald", "Ernest Hemingway", "John Steinbeck"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the first book in the 'A Song of Ice and Fire' series by George R.R. Martin?",
+            "answers": ["A Game of Thrones", "A Clash of Kings", "A Storm of Swords", "A Feast for Crows"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote 'Pride and Prejudice'?",
+            "answers": ["Jane Austen", "Charlotte Brontë", "Emily Brontë", "Charles Dickens"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the setting of the 'Harry Potter' series?",
+            "answers": ["Hogwarts School of Witchcraft and Wizardry", "Middle-earth", "Narnia", "Panem"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote 'The Great Gatsby'?",
+            "answers": ["F. Scott Fitzgerald", "Ernest Hemingway", "John Steinbeck", "J.D. Salinger"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the ship in Herman Melville's 'Moby-Dick'?",
+            "answers": ["Pequod", "Nautilus", "Endeavour", "Mayflower"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "answers": ["William Shakespeare", "Jane Austen", "Charles Dickens", "Oscar Wilde"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the main setting of J.R.R. Tolkien's 'The Hobbit'?",
+            "answers": ["The Shire", "Rivendell", "Gondor", "Mordor"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Which novel by Mary Shelley features a scientist and his creation, often referred to as the modern Prometheus?",
+            "answers": ["Frankenstein", "Dracula", "The Strange Case of Dr Jekyll and Mr Hyde", "The Picture of Dorian Gray"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'The Hitchhiker's Guide to the Galaxy'?",
+            "answers": ["Douglas Adams", "Isaac Asimov", "Philip K. Dick", "Arthur C. Clarke"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In 'The Chronicles of Narnia,' which book features the magical land of Narnia?",
+            "answers": ["The Lion, the Witch and the Wardrobe", "Prince Caspian", "The Horse and His Boy", "The Magician's Nephew"],
+            "correct_answer": 0
+          }
+        ],
+        "medium": [
+          {
+            "question": "Who wrote 'The Odyssey'?",
+            "answers": ["Homer", "Virgil", "Ovid", "Sophocles"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In George Orwell's 'Animal Farm,' what kind of animal is Napoleon?",
+            "answers": ["Pig", "Horse", "Dog", "Rooster"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the subtitle of Mary Shelley's 'Frankenstein'?",
+            "answers": ["The Modern Prometheus", "The Strange Case of Dr Jekyll and Mr Hyde", "The Picture of Dorian Gray", "The Time Machine"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'Brave New World'?",
+            "answers": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Philip K. Dick"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In J.R.R. Tolkien's 'The Lord of the Rings,' what is the name of Aragorn's sword?",
+            "answers": ["Andúril", "Sting", "Glamdring", "Narsil"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the central theme of Fyodor Dostoevsky's 'Crime and Punishment'?",
+            "answers": ["Guilt and Redemption", "Love and Betrayal", "Revenge and Justice", "Madness and Sanity"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the protagonist of Charlotte Brontë's 'Jane Eyre'?",
+            "answers": ["Jane Eyre", "Elizabeth Bennet", "Emma Bovary", "Elinor Dashwood"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Shakespeare's 'Hamlet,' what is the name of Hamlet's uncle, who becomes king?",
+            "answers": ["Claudius", "Polonius", "Laertes", "Horatio"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Gabriel Garcia Marquez's famous novel about the Buendía family in the town of Macondo?",
+            "answers": ["One Hundred Years of Solitude", "Love in the Time of Cholera", "Chronicle of a Death Foretold", "The Autumn of the Patriarch"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the play 'The Importance of Being Earnest'?",
+            "answers": ["Oscar Wilde", "George Bernard Shaw", "Jane Austen", "Arthur Conan Doyle"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What classic novel is subtitled 'Or, The Modern Prometheus'?",
+            "answers": ["Frankenstein", "Dracula", "The Strange Case of Dr Jekyll and Mr Hyde", "The Picture of Dorian Gray"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Ray Bradbury's 'Fahrenheit 451,' what is burned by the firemen?",
+            "answers": ["Books", "Money", "Clothing", "Furniture"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote 'The Canterbury Tales'?",
+            "answers": ["Geoffrey Chaucer", "John Milton", "William Langland", "Thomas More"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the magical land in C.S. Lewis's 'The Chronicles of Narnia'?",
+            "answers": ["Narnia", "Middle-earth", "Westeros", "Oz"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'The Shining'?",
+            "answers": ["Stephen King", "Edgar Allan Poe", "H.P. Lovecraft", "Agatha Christie"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Charlotte Brontë's 'Jane Eyre,' what is Mr. Rochester's first name?",
+            "answers": ["Edward", "John", "William", "George"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What classic novel tells the story of Jean Valjean and his pursuit by the relentless Inspector Javert?",
+            "answers": ["Les Misérables", "Anna Karenina", "Crime and Punishment", "The Brothers Karamazov"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'The Picture of Dorian Gray'?",
+            "answers": ["Oscar Wilde", "H.G. Wells", "E.M. Forster", "Joseph Conrad"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Jane Austen's 'Pride and Prejudice,' who is the wealthy and eligible bachelor?",
+            "answers": ["Mr. Darcy", "Mr. Bingley", "Mr. Collins", "Mr. Wickham"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the ship in Joseph Conrad's 'Heart of Darkness'?",
+            "answers": ["Nellie", "Pequod", "Endeavour", "Nautilus"],
+            "correct_answer": 0
+          }
+
+        ],
+        "hard": [
+          {
+            "question": "In James Joyce's 'Ulysses,' which ancient Greek epic is the narrative loosely based on?",
+            "answers": ["The Odyssey", "The Iliad", "The Aeneid", "The Argonautica"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the novel 'One Hundred Years of Solitude'?",
+            "answers": ["Gabriel Garcia Marquez", "Isabel Allende", "Mario Vargas Llosa", "Julio Cortázar"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In J.D. Salinger's 'The Catcher in the Rye,' what is the protagonist Holden Caulfield trying to preserve?",
+            "answers": ["Innocence", "Rebellion", "Tradition", "Authority"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What Shakespearean play features the characters Rosencrantz and Guildenstern?",
+            "answers": ["Hamlet", "Macbeth", "Othello", "Romeo and Juliet"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the novel 'The Brothers Karamazov'?",
+            "answers": ["Fyodor Dostoevsky", "Leo Tolstoy", "Anton Chekhov", "Ivan Turgenev"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In George Orwell's '1984,' what is the name of the oppressive government led by Big Brother?",
+            "answers": ["Party", "Regime", "Collective", "Authority"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Franz Kafka's unfinished novel about a man named K who is arrested for an unknown crime?",
+            "answers": ["The Trial", "The Castle", "Amerika", "Metamorphosis"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'One Flew Over the Cuckoo's Nest'?",
+            "answers": ["Ken Kesey", "J.D. Salinger", "Joseph Heller", "Ray Bradbury"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of Virginia Woolf's novel that explores the inner thoughts of its characters through a stream-of-consciousness narrative?",
+            "answers": ["Mrs. Dalloway", "To the Lighthouse", "Orlando", "The Waves"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Albert Camus's 'The Stranger,' what is the name of the protagonist who expresses indifference to societal conventions?",
+            "answers": ["Meursault", "Raskolnikov", "Ishmael", "Holden Caulfield"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the title of the first book in Philip Pullman's 'His Dark Materials' trilogy?",
+            "answers": ["The Golden Compass", "The Subtle Knife", "The Amber Spyglass", "Northern Lights"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote 'The Sound and the Fury'?",
+            "answers": ["William Faulkner", "Ernest Hemingway", "F. Scott Fitzgerald", "Toni Morrison"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the name of the dystopian society in Aldous Huxley's 'Brave New World'?",
+            "answers": ["World State", "Oceania", "Panem", "Gilead"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Daphne du Maurier's 'Rebecca,' what is the name of the estate where most of the novel's events take place?",
+            "answers": ["Manderley", "Thornfield Hall", "Wuthering Heights", "Pemberley"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who is the author of 'The Stranger'?",
+            "answers": ["Albert Camus", "Franz Kafka", "Jean-Paul Sartre", "Hermann Hesse"],
+            "correct_answer": 0
+          },
+          {
+            "question": "What is the subtitle of Mary Shelley's 'Frankenstein'?",
+            "answers": ["The Modern Prometheus", "The Strange Case of Dr Jekyll and Mr Hyde", "The Picture of Dorian Gray", "The Time Machine"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In Joseph Conrad's 'Heart of Darkness,' what is the name of the Congo River steamboat?",
+            "answers": ["Nellie", "Pequod", "Endeavour", "Nautilus"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote 'The Master and Margarita,' a novel that blends fantasy, satire, and social commentary?",
+            "answers": ["Mikhail Bulgakov", "Fyodor Dostoevsky", "Leo Tolstoy", "Ivan Turgenev"],
+            "correct_answer": 0
+          },
+          {
+            "question": "In T.S. Eliot's poem 'The Love Song of J. Alfred Prufrock,' what is measured out with coffee spoons?",
+            "answers": ["Life", "Time", "Regret", "Love"],
+            "correct_answer": 0
+          },
+          {
+            "question": "Who wrote the play 'Waiting for Godot'?",
+            "answers": ["Samuel Beckett", "Eugene O'Neill", "Harold Pinter", "Anton Chekhov"],
+            "correct_answer": 0
+          }
+
         ]
       }
     }
