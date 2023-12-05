@@ -1,13 +1,41 @@
+@font-face {
+    font-family: 'CallieChalkFont';
+    src: url('/build/lib/font/CallieChalkFont-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 @mixin display-flex() {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
+// ------------------------------ global variables
+
+$font-face:'CallieChalkFont', sans-serif;
+$chalk-pink:#d2afea;
+$chalk-blue:#addfee;
+$chalk-red: #ffa3a3;
+$chalk-green:#b5eeb9;
+$chalk-orange:#fbcea0;
+$chalk-white:#fbf7f5;
 
 // ------------------------------ global styling
 
 // ------------------------------ page / section styling
+
+.g-base {
+    
+    background-image: url('/build/lib/images/peter-gargiulo-cGNCepznaV8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $chalk-white;
+    font-family: $font-face;
+}
+
 #p-categories #qCategories {
     @include display-flex();
     flex-direction: column;
@@ -22,7 +50,7 @@
     color: #000;
     font-size: 1rem;
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-face;
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
