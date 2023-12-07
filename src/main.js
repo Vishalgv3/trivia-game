@@ -6,7 +6,6 @@ const SOURCE = "http://localhost:3000/bundle.json";
 // keys that will be used to play the game
 const keyEnter = "Enter";
 const keySpace = " ";
-const keyBackSpace = "Backspace";
 const keyA = "a";
 const keyB = "b";
 const keyC = "c";
@@ -20,8 +19,6 @@ let indexBtnStart;
 let qCategories;
 let selectedCategory;
 let pageCategories;
-let btnDown;
-let btnUp;
 let btnSelect;
 
 let timerElement;
@@ -214,6 +211,9 @@ function onUpClicked(e) {
 function onSelectClicked(e) {
     // store the selected category in local storage
     localStorage.setItem("selectedCategory", selectedCategory.innerHTML);
+
+    // redirect to the questions page
+    window.location.href = "./questions.html";
 }
 
 function onResponse(data) {
@@ -261,14 +261,22 @@ function main() {
 
     // categories page
     qCategories = document.querySelector("#qCategories");
-    btnDown = document.querySelector(".btnDown");
-    btnUp = document.querySelector(".btnUp");
     btnSelect = document.querySelector(".btnSelect");
 
-    if (btnDown != null || btnUp != null || btnSelect != null) {
-        btnDown.addEventListener("click", onDownClicked);
-        btnUp.addEventListener("click", onUpClicked);
-        btnSelect.addEventListener("click", onSelectClicked);
+    if (btnSelect != null) {
+        btnSelect.focus();
+        btnSelect.addEventListener("keypress", (e) => {
+            if (e.key == keyA) {
+                // select the category DOWN
+                onDownClicked(e);
+            } else if (e.key == keyB) {
+                // select the category UP
+                onUpClicked(e);
+            } else if (e.key == keyEnter) {
+                // select the category
+                onSelectClicked(e);
+            }
+        });
     }
 
     // questions page
