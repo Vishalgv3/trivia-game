@@ -7,6 +7,7 @@ let jsonData;
 let qCategories;
 let selectedCategory;
 let pageCategories;
+let indexBtnStart;
 let btnDown;
 let btnUp;
 let btnSelect;
@@ -75,6 +76,11 @@ function populateQuestions(jsonData) {
 }
 
 // -------------------- event handlers
+function onIndexBtnStartClicked(e) {
+    // redirect to the player face off page
+    window.location.href = "./pages/faceOff.html";
+}
+
 function onDownClicked(e) {
     let categoryBelow = selectedCategory.nextElementSibling;
     
@@ -136,6 +142,8 @@ function onError(e) {
 function main() {
 
     // initialization
+    indexBtnStart = document.querySelector(".indexBtnStart");
+
     qCategories = document.querySelector("#qCategories");
     btnDown = document.querySelector(".btnDown");
     btnUp = document.querySelector(".btnUp");
@@ -145,6 +153,11 @@ function main() {
     answersElement = document.querySelector(".answers");
 
     // wire up the event handlers to the buttons
+    if (indexBtnStart != null){
+        indexBtnStart.focus();
+        indexBtnStart.addEventListener("keypress", onIndexBtnStartClicked);
+    }
+
     if (btnDown != null || btnUp != null || btnSelect != null) {
         btnDown.addEventListener("click", onDownClicked);
         btnUp.addEventListener("click", onUpClicked);
