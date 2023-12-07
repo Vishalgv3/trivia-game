@@ -147,6 +147,9 @@ function onInputPlayerKeyPressed(e) {
     faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
     faceOffWinner.style.display = "block";
 
+    // store the current player in local storage
+    localStorage.setItem("currentPlayer", currentPlayer);
+
     // redirect to the categories page after 3 seconds
     setTimeout(() => {
         window.location.href = "./categories.html";
