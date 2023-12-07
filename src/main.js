@@ -26,6 +26,7 @@ let btnSelect;
 let timerElement;
 let btnStartTimer;
 let inputPlayer;
+let faceOffWinner;
 
 let questionElement;
 let answersElement;
@@ -128,18 +129,32 @@ function onIndexBtnStartClicked(e) {
 function onInputPlayerKeyPressed(e) {
     // check for keyA
     if (e.key == keyA) {
-        console.log("Player 1 wins");
-
         // remove the focus so that other keypresses are not captured
         inputPlayer.blur();
+
+        console.log("Player 1 wins");
+
+        // set the current player
+        currentPlayer = player1;
+
+        // show the winner
+        faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
+        faceOffWinner.style.display = "block";
     }
 
     // check for keyB
     if (e.key == keyB) {
-        console.log("Player 2 wins");
-
         // remove the focus so that other keypresses are not captured
         inputPlayer.blur();
+
+        console.log("Player 2 wins");
+
+        // set the current player
+        currentPlayer = player2;
+
+        // show the winner
+        faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
+        faceOffWinner.style.display = "block";
     }
 }
 
@@ -219,10 +234,11 @@ function main() {
     }
 
     // face off page
-    player1 = "player1";
-    player2 = "player2";
+    player1 = "Player 1";
+    player2 = "Player 2";
 
     inputPlayer = document.querySelector(".inputPlayer");
+    faceOffWinner = document.querySelector(".faceOffWinner");
     timerElement = document.querySelector(".timer");
     btnStartTimer = document.querySelector(".btnStartTimer");
     if (timerElement != null || btnStartTimer != null) {
