@@ -17,6 +17,8 @@ let qCategories;
 let selectedCategory;
 let pageCategories;
 let indexBtnStart;
+let timerElement;
+let btnStartTimer;
 let btnDown;
 let btnUp;
 let btnSelect;
@@ -25,7 +27,28 @@ let answersElement;
 let jsonAnswers;
 let pageAnswers;
 
+// -------------------- timer variables
+let refreshIntervalId;
+let startingMinutes = 0.1;
+let time = startingMinutes * 60;
+
 // -------------------- public methods
+function updateTimer() {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    if (timerElement) timerElement.innerHTML = `${minutes}:${seconds}`;
+    time--;
+
+    if (seconds == 0) {
+        clearInterval(refreshIntervalId);
+
+        // wire up the event handlers for the players
+    }
+}
+
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -163,6 +186,16 @@ function main() {
     if (indexBtnStart != null){
         indexBtnStart.focus();
         indexBtnStart.addEventListener("keypress", onIndexBtnStartClicked);
+    }
+
+    // face off page
+    timerElement = document.querySelector(".timer");
+    btnStartTimer = document.querySelector(".btnStartTimer");
+    if (timerElement != null || btnStartTimer != null) {
+        btnStartTimer.focus();
+        btnStartTimer.addEventListener("keypress", (e) => {
+            refreshIntervalId = setInterval(updateTimer, 1000);
+        });
     }
 
     // categories page
