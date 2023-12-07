@@ -151,27 +151,29 @@ function onError(e) {
 function main() {
 
     // initialization
+
+    // index page
     indexBtnStart = document.querySelector(".indexBtnStart");
-
-    qCategories = document.querySelector("#qCategories");
-    btnDown = document.querySelector(".btnDown");
-    btnUp = document.querySelector(".btnUp");
-    btnSelect = document.querySelector(".btnSelect");
-
-    questionElement = document.querySelector(".question");
-    answersElement = document.querySelector(".answers");
-
-    // wire up the event handlers to the buttons
     if (indexBtnStart != null){
         indexBtnStart.focus();
         indexBtnStart.addEventListener("keypress", onIndexBtnStartClicked);
     }
+
+    // categories page
+    qCategories = document.querySelector("#qCategories");
+    btnDown = document.querySelector(".btnDown");
+    btnUp = document.querySelector(".btnUp");
+    btnSelect = document.querySelector(".btnSelect");
 
     if (btnDown != null || btnUp != null || btnSelect != null) {
         btnDown.addEventListener("click", onDownClicked);
         btnUp.addEventListener("click", onUpClicked);
         btnSelect.addEventListener("click", onSelectClicked);
     }
+
+    // questions page
+    questionElement = document.querySelector(".question");
+    answersElement = document.querySelector(".answers");
 
     // -------------------- fetch data
     fetch(SOURCE)
