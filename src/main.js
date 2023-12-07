@@ -102,12 +102,13 @@ function populateQuestions(jsonData) {
     if (questionElement) questionElement.innerHTML = selectedEasyQuestion.question;
 
     // populate the answers
+    let alphabets = ["A", "B", "C", "D"];
     jsonAnswers = selectedCategory.difficulties.easy[randomEasyIndex].answers;
     jsonAnswers.forEach((answer, i) => {
         let div = document.createElement("div");
         div.classList.add("answer" + i);
         div.classList.add("answer");
-        div.innerHTML = answer;
+        div.innerHTML = `<span class="${alphabets[i]}">${alphabets[i]}</span>. ${answer}`;
         if (answersElement) answersElement.appendChild(div);
     })
 
