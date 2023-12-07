@@ -3,6 +3,15 @@ import "./../sass/styles.scss";
 
 const SOURCE = "http://localhost:3000/bundle.json";
 
+// keys that will be used to play the game
+const keyEnter = "Enter";
+const keySpace = " ";
+const keyA = "a";
+const keyB = "b";
+const keyC = "c";
+const keyD = "d";
+
+// -------------------- global variables
 let jsonData;
 let qCategories;
 let selectedCategory;
