@@ -13,19 +13,28 @@ const keyD = "d";
 
 // -------------------- global variables
 let jsonData;
+
+let indexBtnStart;
+
 let qCategories;
 let selectedCategory;
 let pageCategories;
-let indexBtnStart;
-let timerElement;
-let btnStartTimer;
 let btnDown;
 let btnUp;
 let btnSelect;
+
+let timerElement;
+let btnStartTimer;
+let inputPlayer;
+
 let questionElement;
 let answersElement;
 let jsonAnswers;
 let pageAnswers;
+
+let player1;
+let player2;
+let currentPlayer;
 
 // -------------------- timer variables
 let refreshIntervalId;
@@ -45,7 +54,10 @@ function updateTimer() {
     if (seconds == 0) {
         clearInterval(refreshIntervalId);
 
-        // wire up the event handlers for the players
+        // wire up the event handler for the players
+        inputPlayer.focus();
+        inputPlayer.placeholder = "Press the button";
+        inputPlayer.addEventListener("keypress", onInputPlayerKeyPressed);
     }
 }
 
@@ -111,6 +123,24 @@ function populateQuestions(jsonData) {
 function onIndexBtnStartClicked(e) {
     // redirect to the player face off page
     window.location.href = "./pages/faceOff.html";
+}
+
+function onInputPlayerKeyPressed(e) {
+    // check for keyA
+    if (e.key == keyA) {
+        console.log("Player 1 wins");
+
+        // remove the focus so that other keypresses are not captured
+        inputPlayer.blur();
+    }
+
+    // check for keyB
+    if (e.key == keyB) {
+        console.log("Player 2 wins");
+
+        // remove the focus so that other keypresses are not captured
+        inputPlayer.blur();
+    }
 }
 
 function onDownClicked(e) {
@@ -189,6 +219,10 @@ function main() {
     }
 
     // face off page
+    player1 = "player1";
+    player2 = "player2";
+
+    inputPlayer = document.querySelector(".inputPlayer");
     timerElement = document.querySelector(".timer");
     btnStartTimer = document.querySelector(".btnStartTimer");
     if (timerElement != null || btnStartTimer != null) {
