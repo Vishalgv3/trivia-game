@@ -4,5 +4,3 @@ build
 build/bundle.css
 build/bundle.js
 build/bundle.js.map
-sass/styles.scss
-src/main.js
