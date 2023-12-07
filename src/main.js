@@ -106,6 +106,9 @@ function onDownClicked(e) {
         categoryBelow.classList.add("selected-category");
         selectedCategory = categoryBelow;
     }
+
+    // make sure the selected category is visible
+    selectedCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function onUpClicked(e) {
@@ -124,6 +127,9 @@ function onUpClicked(e) {
         categoryAbove.classList.add("selected-category");
         selectedCategory = categoryAbove;
     }
+
+    // make sure the selected category is visible
+    selectedCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function onSelectClicked(e) {
