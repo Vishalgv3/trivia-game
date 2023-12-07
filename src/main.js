@@ -47,12 +47,16 @@ function updateTimer() {
 
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
+    // ON FACE OFF PAGE
     if (timerElement) timerElement.innerHTML = `${minutes}:${seconds}`;
     time--;
+
+    // ON QUESTIONS PAGE
 
     if (seconds == 0) {
         clearInterval(refreshIntervalId);
 
+        // ON FACE OFF PAGE
         // wire up the event handler for the players
         inputPlayer.focus();
         inputPlayer.placeholder = "Press the button";
@@ -83,7 +87,6 @@ function populateCategories(data) {
 
     // populate the page categories array
     pageCategories = document.querySelectorAll(".category");
-    console.log(pageCategories);
 }
 
 function populateQuestions(jsonData) {
@@ -106,7 +109,7 @@ function populateQuestions(jsonData) {
     jsonAnswers = selectedCategory.difficulties.easy[randomEasyIndex].answers;
     jsonAnswers.forEach((answer, i) => {
         let div = document.createElement("div");
-        div.classList.add("answer" + i);
+        div.classList.add("answer" + alphabets[i]);
         div.classList.add("answer");
         div.innerHTML = `<span class="${alphabets[i]}">${alphabets[i]}</span>. ${answer}`;
         if (answersElement) answersElement.appendChild(div);
@@ -208,8 +211,6 @@ function onSelectClicked(e) {
 }
 
 function onResponse(data) {
-    console.log(data);
-    
     jsonData = data;
 
     // on categories page
