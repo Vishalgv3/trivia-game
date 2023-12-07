@@ -6,6 +6,7 @@ const SOURCE = "http://localhost:3000/bundle.json";
 // keys that will be used to play the game
 const keyEnter = "Enter";
 const keySpace = " ";
+const keyBackSpace = "Backspace";
 const keyA = "a";
 const keyB = "b";
 const keyC = "c";
