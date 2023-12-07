@@ -130,19 +130,8 @@ function onInputPlayerKeyPressed(e) {
         // remove the focus so that other keypresses are not captured
         inputPlayer.blur();
 
-        console.log("Player 1 wins");
-
         // set the current player
         currentPlayer = player1;
-
-        // show the winner
-        faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
-        faceOffWinner.style.display = "block";
-
-        // redirect to the categories page after 3 seconds
-        setTimeout(() => {
-            window.location.href = "./categories.html";
-        }, 3000);
     }
 
     // check for keyB
@@ -150,20 +139,18 @@ function onInputPlayerKeyPressed(e) {
         // remove the focus so that other keypresses are not captured
         inputPlayer.blur();
 
-        console.log("Player 2 wins");
-
         // set the current player
         currentPlayer = player2;
-
-        // show the winner
-        faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
-        faceOffWinner.style.display = "block";
-
-        // redirect to the categories page after 3 seconds
-        setTimeout(() => {
-            window.location.href = "./categories.html";
-        }, 3000);
     }
+
+    // show the winner
+    faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
+    faceOffWinner.style.display = "block";
+
+    // redirect to the categories page after 3 seconds
+    setTimeout(() => {
+        window.location.href = "./categories.html";
+    }, 3000);
 }
 
 function onDownClicked(e) {
