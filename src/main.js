@@ -28,6 +28,10 @@ let faceOffWinner;
 
 let questionElement;
 let answersElement;
+let qTimer;
+let qBtnStart;
+let qInputPlayer;
+let qPlayerToAnswer;
 let jsonAnswers;
 let pageAnswers;
 
@@ -48,19 +52,58 @@ function updateTimer() {
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
     // ON FACE OFF PAGE
-    if (timerElement) timerElement.innerHTML = `${minutes}:${seconds}`;
-    time--;
+    if (timerElement) {
+        timerElement.innerHTML = `${minutes}:${seconds}`;
+        time--;
+    }
 
     // ON QUESTIONS PAGE
+    if (qTimer) {
+        qTimer.innerHTML = `${minutes}:${seconds}`;
+        time--;
+    }
 
     if (seconds == 0) {
         clearInterval(refreshIntervalId);
 
         // ON FACE OFF PAGE
         // wire up the event handler for the players
-        inputPlayer.focus();
-        inputPlayer.placeholder = "Press the button";
-        inputPlayer.addEventListener("keypress", onInputPlayerKeyPressed);
+        if (inputPlayer) {
+            inputPlayer.focus();
+            inputPlayer.placeholder = "Press the button";
+            inputPlayer.addEventListener("keypress", onInputPlayerKeyPressed);
+        }
+
+        // ON QUESTIONS PAGE
+        if (qInputPlayer) {
+            qInputPlayer.focus();
+            qInputPlayer.placeholder = "Press the button";
+            qInputPlayer.addEventListener("keypress", onQInputPlayerKeyPressed);
+        }
+    }
+}
+
+function questionPageTimerToAnswer() {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // ON QUESTIONS PAGE
+    if (qTimer) {
+        qTimer.innerHTML = `${minutes}:${seconds}`;
+        time--;
+    }
+
+    if (seconds == 0) {
+        clearInterval(refreshIntervalId);
+
+        // ON QUESTIONS PAGE
+        if (qInputPlayer) {
+            qInputPlayer.focus();
+            qInputPlayer.placeholder = "Press the button";
+            qInputPlayer.addEventListener("keypress", onQInputPlayerKeyPressed);
+        }
     }
 }
 
@@ -158,6 +201,34 @@ function onInputPlayerKeyPressed(e) {
     setTimeout(() => {
         window.location.href = "./categories.html";
     }, 3000);
+}
+
+function onQInputPlayerKeyPressed(e) {
+    // check for keyA
+    if (e.key == keyA) {
+        // remove the focus so that other keypresses are not captured
+        qInputPlayer.blur();
+
+        // set the current player
+        currentPlayer = player1;
+    }
+
+    // check for keyB
+    if (e.key == keyB) {
+        // remove the focus so that other keypresses are not captured
+        qInputPlayer.blur();
+
+        // set the current player
+        currentPlayer = player2;
+    }
+
+    // show the current player
+    qInputPlayer.value = `${currentPlayer} answer!`
+    qPlayerToAnswer.innerHTML = currentPlayer;
+
+    // reset the timer
+    time = startingMinutes * 60;
+    refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
 }
 
 function onDownClicked(e) {
@@ -274,6 +345,16 @@ function main() {
     // questions page
     questionElement = document.querySelector(".question");
     answersElement = document.querySelector(".answers");
+    qTimer = document.querySelector(".qTimer");
+    qBtnStart = document.querySelector(".qBtnStart");
+    qInputPlayer = document.querySelector(".qInputPlayer");
+    qPlayerToAnswer = document.querySelector(".qPlayerToAnswer");
+    if (qTimer != null || qBtnStart != null) {
+        qBtnStart.focus();
+        qBtnStart.addEventListener("keypress", (e) => {
+            refreshIntervalId = setInterval(updateTimer, 1000);
+        });
+    }
 
     // -------------------- fetch data
     fetch(SOURCE)
