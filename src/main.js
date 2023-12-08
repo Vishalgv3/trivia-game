@@ -30,14 +30,19 @@ let questionElement;
 let answersElement;
 let qTimer;
 let qBtnStart;
+let qBtnAnswer;
 let qInputPlayer;
 let qPlayerToAnswer;
 let jsonAnswers;
+let shuffledAnswers;
 let pageAnswers;
+let questionNumber;
 
 let player1;
 let player2;
 let currentPlayer;
+let player1Score;
+let player2Score;
 
 // -------------------- timer variables
 let refreshIntervalId;
@@ -45,6 +50,13 @@ let startingMinutes = 0.1;
 let time = startingMinutes * 60;
 
 // -------------------- public methods
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function updateTimer() {
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
@@ -140,17 +152,39 @@ function populateQuestions(jsonData) {
     let selectedCategory = jsonData.categories.find(c => c.category == category);
     console.log(selectedCategory);
 
-    // get a random question from the selected category
-    let randomEasyIndex = getRandomNumber(0, selectedCategory.difficulties.easy.length - 1);
-    let selectedEasyQuestion = selectedCategory.difficulties.easy[randomEasyIndex];
+    // get a random question from the selected category based on the question number
+    let randomIndex;
+    let selectedQuestion;
+    
+    if (questionNumber == 1 || questionNumber == 2) {
+        let randomEasyIndex = getRandomNumber(0, selectedCategory.difficulties.easy.length - 1);
+        let selectedEasyQuestion = selectedCategory.difficulties.easy[randomEasyIndex];
+
+        randomIndex = randomEasyIndex;
+        selectedQuestion = selectedEasyQuestion;
+    } else if (questionNumber == 3 || questionNumber == 4) {
+        let randomMediumIndex = getRandomNumber(0, selectedCategory.difficulties.medium.length - 1);
+        let selectedMediumQuestion = selectedCategory.difficulties.medium[randomMediumIndex];
+
+        randomIndex = randomMediumIndex;
+        selectedQuestion = selectedMediumQuestion;
+    } else if (questionNumber == 5) {
+        let randomHardIndex = getRandomNumber(0, selectedCategory.difficulties.hard.length - 1);
+        let selectedHardQuestion = selectedCategory.difficulties.hard[randomHardIndex];
+
+        randomIndex = randomHardIndex;
+        selectedQuestion = selectedHardQuestion;
+    }
 
     // populate the question element
-    if (questionElement) questionElement.innerHTML = selectedEasyQuestion.question;
+    if (questionElement) questionElement.innerHTML = `<span class="${questionNumber}">${questionNumber}</span>. ${selectedQuestion.question}`;
 
     // populate the answers
     let alphabets = ["A", "B", "C", "D"];
-    jsonAnswers = selectedCategory.difficulties.easy[randomEasyIndex].answers;
-    jsonAnswers.forEach((answer, i) => {
+    jsonAnswers = selectedCategory.difficulties.easy[randomIndex].answers;
+    shuffledAnswers = [...jsonAnswers];
+    shuffleArray(shuffledAnswers);
+    shuffledAnswers.forEach((answer, i) => {
         let div = document.createElement("div");
         div.classList.add("answer" + alphabets[i]);
         div.classList.add("answer");
@@ -161,7 +195,7 @@ function populateQuestions(jsonData) {
     // populate the page answers array
     pageAnswers = document.querySelectorAll(".answer");
 
-    console.log("jsonAnswers>>>> ", jsonAnswers);
+    console.log("jsonAnswers >>>> ", jsonAnswers);
     console.log("answer elements >>>> ", pageAnswers);
 }
 
@@ -226,9 +260,119 @@ function onQInputPlayerKeyPressed(e) {
     qInputPlayer.value = `${currentPlayer} answer!`
     qPlayerToAnswer.innerHTML = currentPlayer;
 
+    // add event listener to the qBtnAnswer
+    setTimeout(() => {
+        qBtnAnswer.focus();
+        qBtnAnswer.addEventListener("keypress", onAnswerPressed);
+    }, 1000);
+
     // reset the timer
     time = startingMinutes * 60;
     refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
+}
+
+function onAnswerPressed(e) {
+    // clear the timer
+    clearInterval(refreshIntervalId);
+
+    // check for keyA
+    if (e.key == keyA) {
+        // remove the focus so that other keypresses are not captured
+        qBtnAnswer.blur();
+
+        // show the answer
+        qBtnAnswer.innerHTML = shuffledAnswers[0];
+    }
+
+    // check for keyB
+    if (e.key == keyB) {
+        // remove the focus so that other keypresses are not captured
+        qBtnAnswer.blur();
+
+        // show the answer
+        qBtnAnswer.innerHTML = shuffledAnswers[1];
+    }
+
+    // check for keyC
+    if (e.key == keyC) {
+        // remove the focus so that other keypresses are not captured
+        qBtnAnswer.blur();
+
+        // show the answer
+        qBtnAnswer.innerHTML = shuffledAnswers[2];
+    }
+
+    // check for keyD
+    if (e.key == keyD) {
+        // remove the focus so that other keypresses are not captured
+        qBtnAnswer.blur();
+
+        // show the answer
+        qBtnAnswer.innerHTML = shuffledAnswers[3];
+    }
+
+    // check if the answer is correct
+    if (qBtnAnswer.innerHTML == jsonAnswers[0]) {
+        // show the correct answer
+        qBtnAnswer.style.backgroundColor = "green";
+        qBtnAnswer.style.color = "white";
+
+        // increase the current player's score according to the question difficulty
+        console.log(`Increase this player's score: ${currentPlayer}`);
+        console.log(`current question number: ${questionNumber}`);
+        if (questionNumber == 1 || questionNumber == 2) {
+            if (currentPlayer == player1) player1Score += 10;
+            else player2Score += 10;
+        } else if (questionNumber == 3 || questionNumber == 4) {
+            if (currentPlayer == player1) player1Score += 20;
+            else player2Score += 20;
+        } else if (questionNumber == 5) {
+            if (currentPlayer == player1) player1Score += 30;
+            else player2Score += 30;
+        }
+
+        console.log(`first player score: ${player1Score}`);
+        console.log(`second player score: ${player2Score}`);
+
+    } else {
+        // show the wrong answer
+        qBtnAnswer.style.backgroundColor = "red";
+        qBtnAnswer.style.color = "white";
+    }
+
+    // continue the game if question number is less than 5
+    if (questionNumber < 5) {
+        setTimeout(() => {
+            // increase the question number
+            questionNumber++;
+    
+            // clear the input and the answer
+            qInputPlayer.value = "";
+            qBtnAnswer.innerHTML = "Answer";
+    
+            // clear the answers element
+            answersElement.innerHTML = "";
+
+            // focus on the start button
+            qBtnStart.focus();
+
+            // // reset the timer
+            time = startingMinutes * 60;
+            // refreshIntervalId = setInterval(updateTimer, 1000);
+
+            // populate the questions again
+            populateQuestions(jsonData);
+        }, 2000);
+    } else {
+        // store the scores in local storage
+        localStorage.setItem("player1Score", player1Score);
+        localStorage.setItem("player2Score", player2Score);
+
+        // redirect to the winner page
+        setTimeout(() => {
+            window.location.href = "./winner.html";
+        }, 2000);
+    }
 }
 
 function onDownClicked(e) {
@@ -286,6 +430,9 @@ function onResponse(data) {
 
     // on categories page
     populateCategories(jsonData);
+    
+    // set question number to 1
+    questionNumber = 1;
 
     // on questions page
     populateQuestions(jsonData);
@@ -343,10 +490,14 @@ function main() {
     }
 
     // questions page
+    player1Score = 0;
+    player2Score = 0;
+
     questionElement = document.querySelector(".question");
     answersElement = document.querySelector(".answers");
     qTimer = document.querySelector(".qTimer");
     qBtnStart = document.querySelector(".qBtnStart");
+    qBtnAnswer = document.querySelector(".qBtnAnswer");
     qInputPlayer = document.querySelector(".qInputPlayer");
     qPlayerToAnswer = document.querySelector(".qPlayerToAnswer");
     if (qTimer != null || qBtnStart != null) {
