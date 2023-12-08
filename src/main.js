@@ -38,6 +38,12 @@ let shuffledAnswers;
 let pageAnswers;
 let questionNumber;
 
+let winner;
+let winnerScore;
+let loser;
+let loserScore;
+let btnStartAgain;
+
 let player1;
 let player2;
 let currentPlayer;
@@ -197,6 +203,36 @@ function populateQuestions(jsonData) {
 
     console.log("jsonAnswers >>>> ", jsonAnswers);
     console.log("answer elements >>>> ", pageAnswers);
+}
+
+function populateWinnerPage() {
+    
+    // check the winner
+    if (winner == null || winnerScore == null || loser == null || loserScore == null) {
+        return;
+    } else {
+        // get the scores from local storage
+        player1Score = localStorage.getItem("player1Score");
+        player2Score = localStorage.getItem("player2Score");
+
+        if (player1Score > player2Score) {
+            winner.innerHTML = player1;
+            winnerScore.innerHTML = player1Score;
+            loser.innerHTML = player2;
+            loserScore.innerHTML = player2Score;
+        } else if (player2Score > player1Score) {
+            winner.innerHTML = player2;
+            winnerScore.innerHTML = player2Score;
+            loser.innerHTML = player1;
+            loserScore.innerHTML = player1Score;
+        } else {
+            winner.innerHTML = "It's a tie!";
+            winnerScore.innerHTML = player1Score;
+            loser.innerHTML = "It's a tie!";
+            loserScore.innerHTML = player2Score;
+        }
+    }
+
 }
 
 // -------------------- event handlers
@@ -436,6 +472,9 @@ function onResponse(data) {
 
     // on questions page
     populateQuestions(jsonData);
+
+    // on winner page
+    populateWinnerPage();
 }
 
 function onError(e) {
@@ -465,6 +504,7 @@ function main() {
     if (timerElement != null || btnStartTimer != null) {
         btnStartTimer.focus();
         btnStartTimer.addEventListener("keypress", (e) => {
+            btnStartTimer.blur();
             refreshIntervalId = setInterval(updateTimer, 1000);
         });
     }
@@ -503,7 +543,24 @@ function main() {
     if (qTimer != null || qBtnStart != null) {
         qBtnStart.focus();
         qBtnStart.addEventListener("keypress", (e) => {
+            qBtnStart.blur();
             refreshIntervalId = setInterval(updateTimer, 1000);
+        });
+    }
+
+    // winner page
+    winner = document.querySelector(".winner");
+    winnerScore = document.querySelector(".winnerScore");
+    loser = document.querySelector(".loser");
+    loserScore = document.querySelector(".loserScore");
+    btnStartAgain = document.querySelector(".btnStartAgain");
+    if (btnStartAgain != null) {
+        btnStartAgain.focus();
+        btnStartAgain.addEventListener("keypress", (e) => {
+            // make sure the player score are reset
+            localStorage.setItem("player1Score", "");
+            localStorage.setItem("player2Score", "");
+            window.location.href = "./../index.html";
         });
     }
 
