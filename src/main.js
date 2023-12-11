@@ -37,6 +37,7 @@ let jsonAnswers;
 let shuffledAnswers;
 let pageAnswers;
 let questionNumber;
+let correctOrWrong;
 
 let winner;
 let winnerScore;
@@ -187,7 +188,7 @@ function populateQuestions(jsonData) {
 
     // populate the answers
     let alphabets = ["A", "B", "C", "D"];
-    jsonAnswers = selectedCategory.difficulties.easy[randomIndex].answers;
+    jsonAnswers = selectedQuestion.answers;
     shuffledAnswers = [...jsonAnswers];
     shuffleArray(shuffledAnswers);
     shuffledAnswers.forEach((answer, i) => {
@@ -303,7 +304,7 @@ function onQInputPlayerKeyPressed(e) {
     }, 1000);
 
     // reset the timer
-    time = startingMinutes * 60;
+    time = 0.3 * 60;
     refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
 }
 
@@ -317,7 +318,7 @@ function onAnswerPressed(e) {
         qBtnAnswer.blur();
 
         // show the answer
-        qBtnAnswer.innerHTML = shuffledAnswers[0];
+        correctOrWrong.innerHTML = shuffledAnswers[0];
     }
 
     // check for keyB
@@ -326,7 +327,7 @@ function onAnswerPressed(e) {
         qBtnAnswer.blur();
 
         // show the answer
-        qBtnAnswer.innerHTML = shuffledAnswers[1];
+        correctOrWrong.innerHTML = shuffledAnswers[1];
     }
 
     // check for keyC
@@ -335,7 +336,7 @@ function onAnswerPressed(e) {
         qBtnAnswer.blur();
 
         // show the answer
-        qBtnAnswer.innerHTML = shuffledAnswers[2];
+        correctOrWrong.innerHTML = shuffledAnswers[2];
     }
 
     // check for keyD
@@ -344,14 +345,15 @@ function onAnswerPressed(e) {
         qBtnAnswer.blur();
 
         // show the answer
-        qBtnAnswer.innerHTML = shuffledAnswers[3];
+        correctOrWrong.innerHTML = shuffledAnswers[3];
     }
 
     // check if the answer is correct
-    if (qBtnAnswer.innerHTML == jsonAnswers[0]) {
+    if (correctOrWrong.innerHTML == jsonAnswers[0]) {
         // show the correct answer
-        qBtnAnswer.style.backgroundColor = "green";
-        qBtnAnswer.style.color = "white";
+        // qBtnAnswer.style.backgroundColor = "green";
+        correctOrWrong.style.color = "#b5eeb9";
+        correctOrWrong.innerHTML += " is correct!";
 
         // increase the current player's score according to the question difficulty
         console.log(`Increase this player's score: ${currentPlayer}`);
@@ -372,8 +374,9 @@ function onAnswerPressed(e) {
 
     } else {
         // show the wrong answer
-        qBtnAnswer.style.backgroundColor = "red";
-        qBtnAnswer.style.color = "white";
+        // qBtnAnswer.style.backgroundColor = "red";
+        correctOrWrong.style.color = "#ffa3a3";
+        correctOrWrong.innerHTML += " is wrong!";
     }
 
     // continue the game if question number is less than 5
@@ -384,7 +387,7 @@ function onAnswerPressed(e) {
     
             // clear the input and the answer
             qInputPlayer.value = "";
-            qBtnAnswer.innerHTML = "Answer";
+            correctOrWrong.innerHTML = "";
     
             // clear the answers element
             answersElement.innerHTML = "";
@@ -398,7 +401,7 @@ function onAnswerPressed(e) {
 
             // populate the questions again
             populateQuestions(jsonData);
-        }, 2000);
+        }, 4000);
     } else {
         // store the scores in local storage
         localStorage.setItem("player1Score", player1Score);
@@ -540,6 +543,7 @@ function main() {
     qBtnAnswer = document.querySelector(".qBtnAnswer");
     qInputPlayer = document.querySelector(".qInputPlayer");
     qPlayerToAnswer = document.querySelector(".qPlayerToAnswer");
+    correctOrWrong = document.querySelector(".correctOrWrong");
     if (qTimer != null || qBtnStart != null) {
         qBtnStart.focus();
         qBtnStart.addEventListener("keypress", (e) => {
