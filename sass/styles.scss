@@ -35,6 +35,15 @@ $border-radius: 10px;
     
   }
 
+  @mixin rainbow-font($colors...) {
+    $gradient: linear-gradient(90deg, $colors);
+    
+    background-image: $gradient;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    display: inline-block; /* Ensures the gradient is applied to each letter */
+}
 // ------------------------------ global styling
 button {
     opacity: 0;
@@ -127,6 +136,10 @@ input{
     @include rainbow-border($colors...);
   border-style: solid; // Specify the border style
 //   border-radius: 10px;
+}
+
+#p-questions .qPlayerToAnswer {
+    @include rainbow-font($colors);
 }
 
 #p-questions .question {

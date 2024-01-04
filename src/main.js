@@ -501,8 +501,8 @@ function main() {
 
     // initialization
 
-    loadingOverlay = document.querySelector(".g-loading-overlay");
-    loadingOverlay.style.display = "none";
+    // loadingOverlay = document.querySelector(".g-loading-overlay");
+    // loadingOverlay.style.display = "none";
 
     // index page
     indexBtnStart = document.querySelector(".indexBtnStart");
