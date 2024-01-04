@@ -54,7 +54,7 @@ let player2Score;
 // -------------------- timer variables
 let refreshIntervalId;
 let startingMinutes = 0.1;
-let time = startingMinutes * 60;
+let time = startingMinutes * 50;
 
 // -------------------- public methods
 function shuffleArray(array) {
@@ -65,8 +65,8 @@ function shuffleArray(array) {
 }
 
 function updateTimer() {
-    let minutes = Math.floor(time / 60);
-    let seconds = time % 60;
+    let minutes = Math.floor(time / 50);
+    let seconds = time % 50;
 
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
@@ -95,7 +95,7 @@ function updateTimer() {
 
         // ON QUESTIONS PAGE
         if (qInputPlayer) {
-            qInputPlayer.focus();
+            qInputPlayer.focus({ preventScroll: true });
             qInputPlayer.placeholder = "Press the button";
             qInputPlayer.addEventListener("keypress", onQInputPlayerKeyPressed);
         }
@@ -103,8 +103,8 @@ function updateTimer() {
 }
 
 function questionPageTimerToAnswer() {
-    let minutes = Math.floor(time / 60);
-    let seconds = time % 60;
+    let minutes = Math.floor(time / 50);
+    let seconds = time % 50;
 
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
@@ -293,6 +293,9 @@ function onQInputPlayerKeyPressed(e) {
         currentPlayer = player2;
     }
 
+    // make sure the options are visible
+    qInputPlayer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
     // show the current player
     qInputPlayer.value = `${currentPlayer} answer!`
     qPlayerToAnswer.innerHTML = currentPlayer;
@@ -304,7 +307,7 @@ function onQInputPlayerKeyPressed(e) {
     }, 1000);
 
     // reset the timer
-    time = 0.3 * 60;
+    time = 0.3 * 50;
     refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
 }
 
@@ -398,7 +401,7 @@ function onAnswerPressed(e) {
             qBtnStart.focus();
 
             // // reset the timer
-            time = startingMinutes * 60;
+            time = startingMinutes * 50;
             // refreshIntervalId = setInterval(updateTimer, 1000);
 
             // populate the questions again
