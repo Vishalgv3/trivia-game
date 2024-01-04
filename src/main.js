@@ -388,6 +388,8 @@ function onAnswerPressed(e) {
             // clear the input and the answer
             qInputPlayer.value = "";
             correctOrWrong.innerHTML = "";
+            qTimer.innerHTML = "-:--";
+            qPlayerToAnswer.innerHTML = "---";
     
             // clear the answers element
             answersElement.innerHTML = "";
