@@ -315,22 +315,34 @@ function onQInputPlayerKeyPressed(e) {
         currentPlayer = player2;
     }
 
-    // make sure the options are visible
-    qInputPlayer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (e.key != keyA && e.key != keyB) {
+        console.log("HERE >>>>>>>>>>>")
 
-    // show the current player
-    qInputPlayer.value = `${currentPlayer} answer!`
-    qPlayerToAnswer.innerHTML = currentPlayer;
+        // give the instructions to the players
+        qPlayerToAnswer.innerHTML = "Press \"A\" or \"B\" to answer!";
 
-    // add event listener to the qBtnAnswer
-    setTimeout(() => {
-        qBtnAnswer.focus();
-        qBtnAnswer.addEventListener("keypress", onAnswerPressed);
-    }, 1000);
+        qInputPlayer.focus();
+        qInputPlayer.placeholder = "Press the button";
+        qInputPlayer.addEventListener("keypress", onQInputPlayerKeyPressed);
+    } else {
+        // make sure the options are visible
+        qInputPlayer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
+        // show the current player
+        qInputPlayer.value = `${currentPlayer} answer!`
+        qPlayerToAnswer.innerHTML = currentPlayer;
+    
+        // add event listener to the qBtnAnswer
+        setTimeout(() => {
+            qBtnAnswer.focus();
+            qBtnAnswer.addEventListener("keypress", onAnswerPressed);
+        }, 1000);
+    
+        // reset the timer
+        time = 0.3 * 50;
+        refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
+    }
 
-    // reset the timer
-    time = 0.3 * 50;
-    refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
 }
 
 function onAnswerPressed(e) {
