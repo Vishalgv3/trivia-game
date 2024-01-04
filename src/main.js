@@ -5,7 +5,7 @@ import "./../sass/styles.scss";
 import "./../node_modules/spin.js/spin.css";
 import { Spinner } from "spin.js";
 
-let spinner = new Spinner({ color: "#FFFFFF", lines:12 }).spin(document.querySelector(".g-loading-overlay"));
+// let spinner = new Spinner({ color: "#FFFFFF", lines:12 }).spin(document.querySelector(".g-loading-overlay"));
 let loadingOverlay;
 
 const SOURCE = "http://localhost:3000/bundle.json";
@@ -268,9 +268,24 @@ function onInputPlayerKeyPressed(e) {
         currentPlayer = player2;
     }
 
-    // show the winner
-    faceOffWinner.innerHTML = `${currentPlayer} wins the Face Off!!!`;
-    faceOffWinner.style.display = "block";
+    // check if any other key is pressed
+    if (e.key != keyA && e.key != keyB) {
+        // remove the focus so that other keypresses are not captured
+        inputPlayer.blur();
+
+        // set the current player
+        currentPlayer = player1;
+
+        // make player1 the current player
+        faceOffWinner.innerHTML = `Other keys were pressed, so <span class=\"winner\">${currentPlayer}<\/span> gets to choose the category for simplicity's sake!`;
+        faceOffWinner.style.display = "block";
+
+    } else {
+        // show the winner
+        faceOffWinner.innerHTML = `<span class=\"winner\">${currentPlayer}<\/span> wins the Face Off!!!`;
+        faceOffWinner.style.display = "block";
+    }
+
 
     // store the current player in local storage
     localStorage.setItem("currentPlayer", currentPlayer);
