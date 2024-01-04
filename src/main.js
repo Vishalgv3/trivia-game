@@ -316,8 +316,6 @@ function onQInputPlayerKeyPressed(e) {
     }
 
     if (e.key != keyA && e.key != keyB) {
-        console.log("HERE >>>>>>>>>>>")
-
         // give the instructions to the players
         qPlayerToAnswer.innerHTML = "Press \"A\" or \"B\" to answer!";
 
