@@ -44,6 +44,20 @@ input {
     opacity: 0;
 }
 
+.g-loading-overlay {
+    font-size: 5rem;
+    position: fixed;
+    z-index: 999;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    overflow: show;
+    margin: auto;
+    display:block;
+    background-color: #000;
+}
+
 // ------------------------------ page / section styling
 
 button{

@@ -1,6 +1,13 @@
 // importing the sass stylesheet for bundling
 import "./../sass/styles.scss";
 
+// importing loading overlay
+import "./../node_modules/spin.js/spin.css";
+import { Spinner } from "spin.js";
+
+let spinner = new Spinner({ color: "#FFFFFF", lines:12 }).spin(document.querySelector(".g-loading-overlay"));
+let loadingOverlay;
+
 const SOURCE = "http://localhost:3000/bundle.json";
 
 // keys that will be used to play the game
@@ -493,6 +500,9 @@ function onError(e) {
 function main() {
 
     // initialization
+
+    loadingOverlay = document.querySelector(".g-loading-overlay");
+    loadingOverlay.style.display = "none";
 
     // index page
     indexBtnStart = document.querySelector(".indexBtnStart");
