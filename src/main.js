@@ -104,6 +104,7 @@ function updateTimer() {
         if (qInputPlayer) {
             qInputPlayer.focus({ preventScroll: true });
             qInputPlayer.placeholder = "Press the button";
+            qPlayerToAnswer.innerHTML = "Face Off!!!";
             qInputPlayer.addEventListener("keypress", onQInputPlayerKeyPressed);
         }
     }
@@ -128,6 +129,7 @@ function questionPageTimerToAnswer() {
         if (qInputPlayer) {
             qInputPlayer.focus();
             qInputPlayer.placeholder = "Press the button";
+            qPlayerToAnswer.innerHTML = "Face Off!!!";
             qInputPlayer.addEventListener("keypress", onQInputPlayerKeyPressed);
         }
     }
