@@ -1,0 +1,193 @@
+/*!***************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/styles.scss ***!
+  \***************************************************************************************************************************************/
+@font-face {
+  font-family: "CallieChalkFont";
+  src: url(/641e30a470b8850c207e.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+button {
+  opacity: 0;
+}
+
+input {
+  opacity: 0;
+}
+
+button {
+  border-image: linear-gradient(90deg, #d2afea, #addfee, #ffa3a3, #b5eeb9, #fbcea0);
+  border-image-slice: 1;
+  border-image-width: 5px;
+  border-image-outset: 0;
+  border-radius: 10px;
+  border-style: solid;
+  font-family: "CallieChalkFont", sans-serif;
+  color: #fbf7f5;
+  background-color: #ffa3a3;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button a:hover {
+  text-decoration: underline;
+}
+
+.g-base {
+  background-image: url(/03d4892bcfa49453c529.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fbf7f5;
+  font-family: "CallieChalkFont", sans-serif;
+}
+
+#p-faceOff .winner {
+  background-image: linear-gradient(90deg, #d2afea, #addfee, #ffa3a3, #b5eeb9, #fbcea0);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  display: inline-block;
+  /* Ensures the gradient is applied to each letter */
+}
+
+#p-categories #qCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+#p-categories #qCategories .category {
+  color: #fbf7f5;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "CallieChalkFont", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#p-categories #qCategories .selected-category {
+  border-image: linear-gradient(90deg, #d2afea, #addfee, #ffa3a3, #b5eeb9, #fbcea0);
+  border-image-slice: 1;
+  border-image-width: 5px;
+  border-image-outset: 0;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+#p-questions .qPlayerToAnswer {
+  background-image: linear-gradient(90deg, #d2afea, #addfee, #ffa3a3, #b5eeb9, #fbcea0);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  display: inline-block;
+  /* Ensures the gradient is applied to each letter */
+}
+
+#p-questions .question {
+  color: #ffa3a3;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "CallieChalkFont", sans-serif;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+#p-questions .answer {
+  color: #fff;
+  font-size: 1rem;
+  width: fit-content;
+  font-family: "CallieChalkFont", sans-serif;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+#p-questions .answer:nth-child(1) {
+  /* styles for the first .answer */
+  color: #d2afea;
+}
+#p-questions .answer:nth-child(2) {
+  /* styles for the second .answer */
+  color: #b5eeb9;
+}
+#p-questions .answer:nth-child(3) {
+  /* styles for the third .answer */
+  color: #fbcea0;
+}
+#p-questions .answer:nth-child(4) {
+  /* styles for the fourth .answer */
+  color: #addfee;
+}
+
+.fatality {
+  color: #ffa3a3;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "CallieChalkFont", sans-serif;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/spin.js/spin.css ***!
+  \*************************************************************************************************************/
+@keyframes spinner-line-fade-more {
+  0%, 100% {
+    opacity: 0; /* minimum opacity */
+  }
+  1% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-fade-quick {
+  0%, 39%, 100% {
+    opacity: 0.25; /* minimum opacity */
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-fade-default {
+  0%, 100% {
+    opacity: 0.22; /* minimum opacity */
+  }
+  1% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-shrink {
+  0%, 25%, 100% {
+    /* minimum scale and opacity */
+    transform: scale(0.5);
+    opacity: 0.25;
+  }
+  26% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+

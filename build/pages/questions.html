@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="../bundle.css" />
+</head>
+
+<body class="g-base">
+
+    <main id="p-questions">
+        <h2>Questions Display</h2>
+        <p>Player 1 must press "A" and Player 2 must press "B" for the Face Off.</p>
+        <b>Whoever presses the button first, gets 0:15 seconds to answer the question.</b>
+        <p>Press A, B, C or D to select an option.</p>
+        <p>If players fail to answer within time limit, face off starts again. WITHOUT TIMER!!!</p>
+        <div>Timer: <span class="qTimer">-:--</span></div>
+        <div>This player gets to answer: <span class="qPlayerToAnswer">---</span></div>
+        <div class="correctOrWrong"></div>
+        <div>
+            <div class="question"></div>
+            <div class="answers"></div>
+        </div>
+        <button class="qBtnStart"><a href="./winner.html">Start</a></button>
+        <input type="text" class="qInputPlayer" />
+        <button class="qBtnAnswer"><a href="./winner.html">Answer</a></button>
+    </main>
+
+    <script src="../bundle.js"></script>
+</body>
+
+</html>
