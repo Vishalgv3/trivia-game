@@ -8,7 +8,7 @@ import { Spinner } from "spin.js";
 // let spinner = new Spinner({ color: "#FFFFFF", lines:12 }).spin(document.querySelector(".g-loading-overlay"));
 let loadingOverlay;
 
-const SOURCE = "http://localhost:3000/bundle.json";
+const SOURCE = "https://vishal-trivia-game.vercel.app/bundle.json";
 
 // keys that will be used to play the game
 const keyEnter = "Enter";
@@ -66,8 +66,8 @@ let time = startingMinutes * 50;
 // -------------------- public methods
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
 }
 
@@ -171,7 +171,7 @@ function populateQuestions(jsonData) {
     // get a random question from the selected category based on the question number
     let randomIndex;
     let selectedQuestion;
-    
+
     if (questionNumber == 1 || questionNumber == 2) {
         let randomEasyIndex = getRandomNumber(0, selectedCategory.difficulties.easy.length - 1);
         let selectedEasyQuestion = selectedCategory.difficulties.easy[randomEasyIndex];
@@ -216,7 +216,7 @@ function populateQuestions(jsonData) {
 }
 
 function populateWinnerPage() {
-    
+
     // check the winner
     if (winner == null || winnerScore == null || loser == null || loserScore == null) {
         return;
@@ -327,17 +327,17 @@ function onQInputPlayerKeyPressed(e) {
     } else {
         // make sure the options are visible
         qInputPlayer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    
+
         // show the current player
         qInputPlayer.value = `${currentPlayer} answer!`
         qPlayerToAnswer.innerHTML = currentPlayer;
-    
+
         // add event listener to the qBtnAnswer
         setTimeout(() => {
             qBtnAnswer.focus();
             qBtnAnswer.addEventListener("keypress", onAnswerPressed);
         }, 1000);
-    
+
         // reset the timer
         time = 0.3 * 50;
         refreshIntervalId = setInterval(questionPageTimerToAnswer, 1000);
@@ -421,13 +421,13 @@ function onAnswerPressed(e) {
         setTimeout(() => {
             // increase the question number
             questionNumber++;
-    
+
             // clear the input and the answer
             qInputPlayer.value = "";
             correctOrWrong.innerHTML = "";
             qTimer.innerHTML = "-:--";
             qPlayerToAnswer.innerHTML = "---";
-    
+
             // clear the answers element
             answersElement.innerHTML = "";
 
@@ -455,7 +455,7 @@ function onAnswerPressed(e) {
 
 function onDownClicked(e) {
     let categoryBelow = selectedCategory.nextElementSibling;
-    
+
     if (categoryBelow == null) {
         // we are at the bottom of the list
         selectedCategory.classList.remove("selected-category");
@@ -476,7 +476,7 @@ function onDownClicked(e) {
 
 function onUpClicked(e) {
     let categoryAbove = selectedCategory.previousElementSibling;
-    
+
     if (categoryAbove == null) {
         // we are at the top of the list
         selectedCategory.classList.remove("selected-category");
@@ -508,7 +508,7 @@ function onResponse(data) {
 
     // on categories page
     populateCategories(jsonData);
-    
+
     // set question number to 1
     questionNumber = 1;
 
@@ -533,7 +533,7 @@ function main() {
 
     // index page
     indexBtnStart = document.querySelector(".indexBtnStart");
-    if (indexBtnStart != null){
+    if (indexBtnStart != null) {
         indexBtnStart.focus();
         indexBtnStart.addEventListener("keypress", onIndexBtnStartClicked);
     }

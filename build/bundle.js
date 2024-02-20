@@ -3002,7 +3002,7 @@ function convertOffset(x, y, degrees) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("172587fcb948b3d4501c")
+/******/ 		__webpack_require__.h = () => ("3f51bc9891dd093e665d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3372,7 +3372,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // let spinner = new Spinner({ color: "#FFFFFF", lines:12 }).spin(document.querySelector(".g-loading-overlay"));
 let loadingOverlay;
-const SOURCE = "http://localhost:3000/bundle.json";
+const SOURCE = "https://vishal-trivia-game.vercel.app/bundle.json";
 
 // keys that will be used to play the game
 const keyEnter = "Enter";
