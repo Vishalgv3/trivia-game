@@ -8,7 +8,7 @@ import { Spinner } from "spin.js";
 // let spinner = new Spinner({ color: "#FFFFFF", lines:12 }).spin(document.querySelector(".g-loading-overlay"));
 let loadingOverlay;
 
-const SOURCE = "https://vishal-trivia-game.vercel.app/bundle.json";
+const SOURCE = "https://trivia-kombat.vercel.app/bundle.json";
 
 // keys that will be used to play the game
 const keyEnter = "Enter";
